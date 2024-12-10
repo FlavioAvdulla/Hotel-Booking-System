@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.first-container {
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 60%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* background-color: #8b21216d; */
+}
+
+.blend-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(175, 139, 97);
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 60%;
+    height: 70px;
+    /* background-color: #434343; */
+    color: white;
+}
+
+.blend-overlay-black {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+.second-container p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.first-container h1 {
+    color: white;
+    font-size: 80px;
+}
+
+/* ================================ third section */
+
+.third-section {
+    display: flex;
+    margin: 83px auto;
+    width: 60%;
+    height: 130px;
+    /* background-color: rgba(133, 133, 133, 0.615); */
+    gap: 5px;
+}
+
+.section-1,
+.section-2,
+.section-3
+ {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.61);
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.section-4 {
+    display: flex;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.section-4 p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.check-in {
+    margin: 15px 0px 0px 0px;
+}
+
+.date-month {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.month {
+    margin: 0px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date p {
+    font-family: "Bahnschrift Condensed", sans-serif;
+    font-size: 70px;
+}
+
+.month p {
+    font-family: "Bahnschrift Condensed", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 3px 0px 0px 0px;
+}

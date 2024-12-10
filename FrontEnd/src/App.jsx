@@ -1,12 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
+import NavbarTop from "./components/NavbarTop/NavbarTop";
 import { BrowserRouter as Router } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import NavbarBottom from "./components/NavbarBottom/NavbarBottom";
 
 const App = () => {
   return (
     <div className="app">
       <Router>
-        <Navbar />
+        <NavbarTop />
+        <NavbarBottom />
       </Router>
     </div>
   );

@@ -1,0 +1,93 @@
+.navbar-top {
+    background-color: antiquewhite;
+}
+
+.navbar-sections-top {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* padding: 15px; */
+    justify-content: space-between;
+    align-items: center;
+}
+/* ==================================== Navbar left */
+.navbar-left {
+    display: flex;
+}
+
+.credit-card {
+    display: flex;
+    padding: 0px 40px 0px 0px;
+    align-items: center;
+}
+
+.credit-card p {
+    cursor: pointer;
+}
+
+.fa-credit-card,
+.fa-circle-check {
+    padding: 2px 10px 0px 0px;
+}
+
+.terms-conditions {
+    display: flex;
+    margin: 0px 40px 0px 0px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languages {
+    display: flex;
+    gap: 20px; 
+}
+.languages p {
+    cursor: pointer;
+}
+
+/* ==================================== Navbar right */
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.fa-envelope {
+    padding: 2px 10px 0px 0px;
+}
+
+.bookings {
+    display: flex;
+    align-items: center;
+    margin: 0px 40px 0px 0px;
+    cursor: pointer;
+}
+
+.review{
+    margin: 0px 40px 0px 0px;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    background-color: rgb(196, 154, 93);
+    width: 250px;
+    height: 100%;
+    color: white;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-info {
+    font-weight: 300
+}
+
+.login-info .login-text{
+    font-weight: 700;
+}
+
+.fa-user {
+    font-size: 30px;
+    padding: 2px 15px 0px 0px;
+}

@@ -6,7 +6,7 @@ const NavbarBottom = () => {
   return (
     <div className="navbar-bottom">
       <div className="navbar-sections-bottom">
-        <img src={Hotel_Bookin_Logo_White} alt="" />
+        <img src={Hotel_Bookin_Logo_White} alt={Hotel_Bookin_Logo_White} />
         <div className="page-sections">
           <ul>
             <li>Home</li>

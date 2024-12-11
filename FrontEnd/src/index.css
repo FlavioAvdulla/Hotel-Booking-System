@@ -6,6 +6,11 @@
     font-family: Lato;
     font-size: 16px;
     box-sizing: border-box;
+    --gold-color: rgb(196, 154, 93);
+    --black-color-transparency: rgba(0, 0, 0, 0.849);
+    --light-grey: rgba(247, 247, 247);
+    --grey-color: rgba(117, 117, 117);
+    --dark-grey: rgba(43, 43, 43);
 }
 
 body {

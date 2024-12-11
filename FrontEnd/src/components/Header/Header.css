@@ -1,7 +1,8 @@
 .header {
     width: 100%;
+    height: 100%;
     margin: auto;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
@@ -30,7 +31,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(175, 139, 97);
+    background-color: var(--gold-color);
     mix-blend-mode: multiply;
     backdrop-filter: blur(3px);
     z-index: -1;
@@ -53,7 +54,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #3b3b3b;
+    background-color: var(--black-color-transparency);
     mix-blend-mode: multiply;
     backdrop-filter: blur(3px);
     z-index: -1;
@@ -73,7 +74,7 @@
 
 .third-section {
     display: flex;
-    margin: 83px auto;
+    margin: 83px auto 0px auto;
     width: 60%;
     height: 130px;
     /* background-color: rgba(133, 133, 133, 0.615); */
@@ -88,6 +89,7 @@
     flex-direction: column;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.61);
+    backdrop-filter: blur(3px);
     width: 25%;
     height: 100%;
     justify-content: center;

@@ -1,0 +1,88 @@
+.restaurant {
+    display: flex;
+    height: 100vh;
+    margin: 100px auto 100px auto;
+    background-color: var(--light-grey);
+}
+
+.restaurant-section {
+    display: flex;
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    justify-content: center;
+    background-color: antiquewhite;
+    /* gap: 20px; */
+}
+
+.restaurant-section-left,
+.restaurant-section-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.restaurant-section-left img,
+.restaurant-section-right img {
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+
+
+.restaurant-section-left-info {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.restaurant-section-left-info-head h2 {
+    font-weight: 300;
+    font-size: 19px;
+    margin: 0px 0px 12px 0px;
+    color: var(--gold-color);
+    text-align: center;
+}
+
+.restaurant-section-left-info-head h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold-color);
+    text-align: center;
+}
+
+
+.restaurant-section-left-info-head hr {
+    margin: 0px auto 7px auto;
+    border: 1px solid var(--gold-color);
+    width: 20%;
+}
+
+.restaurant-section-left-info p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.restaurant-section-left button {
+    border: 1px solid var(--gold-color);
+    font-size: 15px;
+    font-weight: 300;
+    width: 8vw;
+    padding: 8px;
+    color: white;
+    background-color: var(--gold-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.restaurant-section-left button:hover {
+    background-color: transparent;
+    scale: 105%;
+    color: var(--dark-grey);
+}

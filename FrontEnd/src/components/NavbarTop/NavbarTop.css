@@ -82,7 +82,11 @@
 }
 
 .login-info {
-    font-weight: 300
+    font-weight: 300;
+}
+
+.login-info p {
+    color: white;
 }
 
 .login-info .login-text{

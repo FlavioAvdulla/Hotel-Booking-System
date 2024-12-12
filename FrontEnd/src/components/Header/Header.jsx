@@ -75,7 +75,7 @@ const Header = () => {
 
         <div className="section-4">
             <p>CHECK<br/>AVAILABILITY</p>
-          <div className="blend-overlay-black"></div>
+          <div className="section-4-overlay-black"></div>
         </div>
       </div>
     </div>

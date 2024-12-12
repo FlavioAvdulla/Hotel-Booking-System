@@ -32,6 +32,7 @@
     font-weight: 300;
     align-items: center;
     cursor: pointer;
+    font-size: 17px;
 }
 
 .navbar-bottom button {

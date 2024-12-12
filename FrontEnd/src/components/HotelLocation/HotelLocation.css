@@ -20,7 +20,7 @@
 .info {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     height: 100%;
     background-color: var(--dark-grey);
     padding: 120px 40px;
@@ -36,14 +36,14 @@
 
 .info h1 {
     color: white;
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 600;
     /* margin: 80px 0px 0px 0px; */
 }
 
 .info h3 {
     color: var(--gold-color);
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 600;
 }
 
@@ -53,7 +53,7 @@
     color: white;
     text-align: justify;
     text-align-last: left;
-    margin: 80px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 .info button {
@@ -65,7 +65,7 @@
     padding: 8px;
     color: white;
     background-color: var(--gold-color);
-    margin: 80px 0px 0px 0px;
+    margin: 55px 0px 0px 0px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
@@ -82,21 +82,29 @@
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    padding: 80px 40px;
 }
 
 .assistant img {
-    width: 70%;
+    width: 100%;
     height: auto;
-    border-radius: 50%;
-    border: 1px solid var(--gold-color);
-    margin: 0px 0px 50px 0px;
+    /* border-radius: 50%; */
+    /* border: 1px solid var(--gold-color); */
 }
 
 .assistant p {
     /* padding: 0px 20px 0px 20px; */
     text-align: justify;
     text-align-last: center;
-    font-size: 15px;
+    font-size: 13px;
+    padding: 40px 40px;
+}
 
+.location-description {
+    width: 80%;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 15px;
+    margin: 40px auto 0px auto;
+    color: var(--grey-color);
+    font-weight: 400;
 }

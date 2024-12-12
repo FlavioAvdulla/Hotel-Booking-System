@@ -6,16 +6,15 @@ import restaurant_02 from "../../assets/images/restaurant_02.jpg";
 const Restaurant = () => {
   return (
     <div className="restaurant">
-      <div className="restaurant-section">
-        <div className="restaurant-section-left">
+      <div className="restaurant-sections">
+        <div className="restaurant-section">
           <img src={restaurant_01} alt={restaurant_01} />
-          <div className="restaurant-section-left-info">
-            <div className="restaurant-section-left-info-head">
-            <h2>LUXURY HOTEL</h2>
-            <hr />
-            <h1>BEST ROOMS</h1>
+          <div className="restaurant-section-info">
+            <div className="restaurant-section-info-head">
+              <h2>FINE FOOD</h2>
+              <hr />
+              <h1>RESTAURANT</h1>
             </div>
-            
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer
@@ -29,15 +28,13 @@ const Restaurant = () => {
           </div>
         </div>
 
-        <div className="restaurant-section-left">
-          
-          <div className="restaurant-section-left-info">
-            <div className="restaurant-section-left-info-head">
-            <h2>LUXURY HOTEL</h2>
-            <hr />
-            <h1>BEST ROOMS</h1>
+        <div className="restaurant-section">
+          <div className="restaurant-section-info">
+            <div className="restaurant-section-info-head">
+              <h2>FINE FOOD</h2>
+              <hr />
+              <h1>RESTAURANT</h1>
             </div>
-            
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer

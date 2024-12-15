@@ -55,12 +55,12 @@
 }
 
 .best-rooms-left-info {
-    padding: 20px 45px;
+    padding: 20px 40px;
     display: flex;
     align-items: left;
     flex-direction: column;
     justify-content: space-around;
-    height: 42%;
+    height: 50%;
 }
 
 .best-rooms-left-info h1 {

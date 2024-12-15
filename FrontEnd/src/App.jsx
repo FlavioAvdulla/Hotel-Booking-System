@@ -8,6 +8,8 @@ import HotelBayView from "./components/HotelBayView/HotelBayView.JSX";
 import BestRooms from "./components/BestRooms/BestRooms";
 import HotelLocation from "./components/HotelLocation/HotelLocation";
 import Restaurant from "./components/Restaurant/Restaurant";
+import HotelVideo from "./components/HotelVideo/HotelVideo";
+import HotelNews from "./components/HotelNews/HotelNews";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <BestRooms />
         <HotelLocation />
         <Restaurant />
+        <HotelVideo />
+        <HotelNews />
       </Router>
     </div>
   );

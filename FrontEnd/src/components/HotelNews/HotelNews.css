@@ -1,0 +1,73 @@
+.hotel-news {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px auto 100px auto;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+
+.hotel-news-head {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    /* height: 55%; */
+    align-items: center;
+}
+
+.hotel-news-head h2 {
+    font-weight: 300;
+    font-size: 19px;
+    margin: 0px 0px 12px 0px;
+    color: var(--gold-color);
+}
+
+.hotel-news-head h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.hotel-news-head hr {
+    margin: 0px 0px 7px 0px;
+    border: 1px solid var(--gold-color);
+    width: 3%;
+    overflow: hidden;
+}
+
+.hotel-news-sections {
+    margin: 0px auto 0px auto;
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+.hotel-news-section_01,
+.hotel-news-section_02,
+.hotel-news-section_03 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(90, 10, 10);
+}
+
+.hotel-news-section_01_post,
+.hotel-news-section_02_post,
+.hotel-news-section_03_post {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.hotel-news-section_01_image,
+.hotel-news-section_02_image,
+.hotel-news-section_03_image {
+    width: 100%;
+    height: 55%;
+    background-color: rgb(34, 200, 200);
+}

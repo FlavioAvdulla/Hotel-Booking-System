@@ -27,7 +27,7 @@ const BestRooms = () => {
               <p className="description">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod ti. nibh euismod ti. nibh euismod ti.
+                diam nonummy nibh euismod ti.
               </p>
               <button>BOOK NOW</button>
             </div>

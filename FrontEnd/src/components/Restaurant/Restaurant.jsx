@@ -16,13 +16,10 @@ const Restaurant = () => {
               <h1>RESTAURANT</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer
               adipiscing elit, sed diam nonummy nibh euismod ti. nibh euismod
-              ti. nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit, sed diam nonummy nibh euismod ti. Lorem ipsum
-              dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-              nibh euismod ti. nibh euismod ti. nibh euismod ti.
+              ti. nibh euismod ti. Lorem ipsum dolor consectetuer adipiscing elit.
             </p>
             <button>READ MORE</button>
           </div>
@@ -39,10 +36,7 @@ const Restaurant = () => {
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer
               adipiscing elit, sed diam nonummy nibh euismod ti. nibh euismod
-              ti. nibh euismod ti. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit, sed diam nonummy nibh euismod ti. Lorem ipsum
-              dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-              nibh euismod ti. nibh euismod ti. nibh euismod ti.
+              ti. nibh euismod ti. Lorem ipsum dolor consectetuer adipiscing elit.
             </p>
             <button>READ MORE</button>
           </div>

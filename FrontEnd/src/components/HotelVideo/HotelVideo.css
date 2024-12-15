@@ -1,0 +1,117 @@
+.hotel-video {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px auto 100px auto;
+    /* background-color: var(--gold-color); */
+    justify-content: space-between;
+}
+
+.hotel-video-head {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    /* height: 55%; */
+    align-items: center;
+}
+
+.hotel-video-head h2 {
+    font-weight: 300;
+    font-size: 19px;
+    margin: 0px 0px 12px 0px;
+    color: var(--gold-color);
+}
+
+.hotel-video-head h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+
+.hotel-video-head hr {
+    margin: 0px 0px 7px 0px;
+    border: 1px solid var(--gold-color);
+    width: 3%;
+    overflow: hidden;
+}
+
+.video-section {
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+    
+}
+
+.video-design {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    margin: 0px auto 600px auto;
+    transition: 0.5s ease-in-out;
+}
+
+.video-design:hover {
+    margin: 0px auto 3px auto;
+}
+
+.video-design-blend {
+    /* display: flex; */
+    position: absolute;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.482);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 60%;
+    /* z-index: 2; */
+    border-radius: 0px 0px 50px 50px;
+    border: 2px solid var(--gold-color);
+    border-top: none;
+}
+
+
+.video-design-text {
+    width: 70%;
+    margin: 45px auto 3px auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.relax,
+.enjoy {
+    color: var(--gold-color);
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.video-design-text h1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+}
+
+.video-pharagraph {
+    font-size: 20px;
+    font-weight: 300;
+    z-index: 3;
+    color: white;
+    margin: 20px auto 0px auto;
+}

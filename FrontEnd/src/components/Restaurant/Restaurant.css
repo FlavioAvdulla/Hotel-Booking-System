@@ -1,7 +1,7 @@
 .restaurant {
     display: flex;
     height: 100vh;
-    margin: 100px auto 100px auto;
+    margin: 100px auto 0px auto;
     background-color: var(--light-grey);
 }
 
@@ -33,7 +33,7 @@
 
 .restaurant-section-info {
     display: flex;
-    padding: 40px;
+    padding: 20px 40px;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;

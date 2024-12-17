@@ -10,6 +10,7 @@ import HotelLocation from "./components/HotelLocation/HotelLocation";
 import Restaurant from "./components/Restaurant/Restaurant";
 import HotelVideo from "./components/HotelVideo/HotelVideo";
 import HotelNews from "./components/HotelNews/HotelNews";
+import Hotel_Footer from "./components/Hotel_Footer/Hotel_Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Restaurant />
         <HotelVideo />
         <HotelNews />
+        <Hotel_Footer />
       </Router>
     </div>
   );

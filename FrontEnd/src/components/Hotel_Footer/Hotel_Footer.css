@@ -1,0 +1,94 @@
+.hotel-footer {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    margin: auto;
+    background-color: var(--dark-grey);
+}
+
+.hotel-footer-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.hotel-footer-section-info {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+
+.hotel-footer-section_copyright {
+    height: 10vh;
+    background-color: var(--gold-color);
+}
+
+.phone-support,
+.connect-with-us,
+.news-letter {
+    justify-content: space-between;
+}
+
+.phone-support h1,
+.connect-with-us h1,
+.news-letter h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.phone-support h2,
+.connect-with-us h2,
+.news-letter h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px 0px 52px 0px;
+}
+
+.phone-support p,
+.connect-with-us p {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.connect-with-us-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fa-brands {
+    font-size: 35px;
+    color: var(--gold-color);
+}
+
+.news-letter-input input{
+    width: 300px;
+    padding: 8px;
+    border: 1px solid white;
+    background-color: white;
+    outline: none;
+}
+
+.news-letter-input button {
+    border: 1px solid var(--gold-color);
+    font-size: 15px;
+    font-weight: 300;
+    width: 8vw;
+    padding: 8px;
+    color: white;
+    background-color: var(--gold-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.news-letter-input button:hover {
+    background-color: var(--dark-grey);
+    scale: 105%;
+}

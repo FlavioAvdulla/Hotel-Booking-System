@@ -3,7 +3,7 @@
 }
 
 .navbar-sections-bottom {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 25px 0px 25px 0px;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 
 .navbar-bottom img {
     width: 170px;
-    margin: 0px 100px 0px 0px;
+    /* margin: 0px 100px 0px 0px; */
     cursor: pointer;
 }
 

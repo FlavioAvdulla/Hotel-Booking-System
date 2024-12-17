@@ -48,7 +48,7 @@
 }
 
 .info p {
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 300;
     color: white;
     text-align: justify;
@@ -95,7 +95,7 @@
     /* padding: 0px 20px 0px 20px; */
     text-align: justify;
     text-align-last: center;
-    font-size: 13px;
+    font-size: 14px;
     padding: 40px 40px;
 }
 
@@ -103,7 +103,6 @@
     width: 80%;
     text-align: justify;
     text-align-last: center;
-    font-size: 15px;
     margin: 40px auto 0px auto;
     color: var(--grey-color);
     font-weight: 400;

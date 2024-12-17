@@ -24,4 +24,11 @@ a {
 
 p {
     color: var(--dark-grey);
+    /* font-weight: 400; */
+    font-size: 15px;
+}
+
+h1,
+h2 {
+    color: var(--dark-grey);
 }

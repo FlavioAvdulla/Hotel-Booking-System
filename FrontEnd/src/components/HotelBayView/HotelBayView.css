@@ -47,7 +47,7 @@
     font-size: 20px;
     font-weight: 300;
     margin: 0 auto;
-    width: 12vw;
+    width: 200px;
     padding: 8px;
     color: white;
     background-color: var(--gold-color);
@@ -59,4 +59,29 @@
     background-color: transparent;
     scale: 105%;
     color: var(--dark-grey);
+}
+
+@media (max-width:1000px) {
+    .hotel-bay-view {
+        flex-direction: column;
+        margin: 230px auto 100px auto;
+    }
+
+    .hotel-bay-view-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hotel-bay-view-right img {
+        width: 80vw;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .hotel-bay-view-info button {
+        width: 200px;
+    }
+    
 }

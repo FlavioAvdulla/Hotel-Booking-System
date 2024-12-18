@@ -18,7 +18,7 @@ const Header = () => {
         <p>ROOMS & SUITES</p>
         <div className="blend-overlay-black"></div>
       </div>
-      <div className="third-section">
+      <div className="third-container">
         <div className="section-1">
           <div className="check-in">
             <p>CHECK IN</p>

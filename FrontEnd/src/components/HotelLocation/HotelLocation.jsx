@@ -12,16 +12,17 @@ const HotelLocation = () => {
           <img src={location_01} alt={location_01} />
           <img src={location_02} alt={location_02} />
         </div>
-        <div className="info">
+        <div className="info-section">
+          <div className="info">
           <h2>LUXURY HOTEL & BEST RESPORT</h2>
-          <h1>Discover our</h1>
-          <h3>Location</h3>
+          <h1>Discover our<br/><span>Location</span></h1>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam.
           </p>
           <button>CHECK ALL PACKAGES</button>
+          </div>
         </div>
 
         <div className="assistant">

@@ -7,6 +7,8 @@
 }
 
 .header img {
+    width: 100%;
+    height: 863px;
     position: absolute;
     left: 0;
     top: 0;
@@ -18,7 +20,7 @@
     position: relative;
     top: 50px;
     margin: auto;
-    width: 60%;
+    width: 70%;
     height: 400px;
     justify-content: center;
     align-items: center;
@@ -44,7 +46,7 @@
     position: relative;
     top: 50px;
     margin: auto;
-    width: 60%;
+    width: 70%;
     height: 70px;
     /* background-color: #434343; */
     color: white;
@@ -71,12 +73,15 @@
     font-size: 80px;
 }
 
-/* ================================ third section */
+/* ================================ third container */
 
-.third-section {
+.third-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     margin: 83px auto 0px auto;
-    width: 60%;
+    width: 70%;
     height: 130px;
     /* background-color: rgba(133, 133, 133, 0.615); */
     gap: 5px;
@@ -84,18 +89,19 @@
 
 .section-1,
 .section-2,
-.section-3
- {
+.section-3,
+.section-4 {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    /* margin: auto; */
     background-color: rgba(255, 255, 255, 0.61);
     backdrop-filter: blur(3px);
-    width: 25%;
+    width: calc((100% - 15px) / 4);
     height: 100%;
     justify-content: center;
     align-items: center;
 }
+
 .section-4 {
     display: flex;
     position: relative;
@@ -128,7 +134,7 @@
 .section-4:hover {
     border: 2px solid var(--black-color-transparency);
     /* background: transparent; */
-    
+
 }
 
 .check-in {
@@ -160,4 +166,85 @@
     font-size: 25px;
     font-weight: 400;
     margin: 3px 0px 0px 0px;
+}
+
+
+@media (max-width:1400px) {
+    .first-container h1 {
+        font-size: 70px;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width:1200px) {
+    .first-container h1 {
+        font-size: 60px;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container
+    {
+        width: 70%;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .first-container h1 {
+        font-size: 45px;
+    }
+
+    .first-container,
+    .second-container,
+    .third-container
+    {
+        width: 70%;
+    }
+
+    .date-month {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width:750px) {
+
+    .first-container h1 {
+        width: 80%;
+    }
+
+    .first-container {
+        height: 300px;
+        width: 90%;
+    }
+
+    .second-container,
+    .third-container
+    {
+        width: 90%;
+    }
+
+    .date-month {
+        gap: 5px;
+    }
+
+    .section-4 p {
+        font-size: 12px;
+    }
+
+    .date p {
+        font-size: 40px;
+    }
+    
+    .month p {
+        font-size: 15px;
+    }
+    
 }

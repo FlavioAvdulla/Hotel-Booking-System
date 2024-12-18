@@ -1,5 +1,6 @@
 .navbar-bottom {
     background-color: var(--black-color-transparency);
+    overflow: hidden;
 }
 
 .navbar-sections-bottom {
@@ -23,16 +24,36 @@
 
 .page-sections ul {
     display: flex;
-    gap: 80px;
+    gap: 40px;
 }
 
 .page-sections li {
+    text-align: center;
+    width: 100px;
     list-style: none;
     color: white;
     font-weight: 300;
     align-items: center;
     cursor: pointer;
     font-size: 17px;
+    position: relative;
+}
+
+.page-sections li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    width: 0%;
+    height: 10px;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px 20px 0% 0%;
+}
+
+.page-sections li:hover::after,
+.page-sections li.active::after {
+    width: 100%;
 }
 
 .navbar-bottom button {
@@ -49,4 +70,50 @@
 .navbar-bottom button:hover {
     background-color: transparent;
     scale: 105%;
+}
+
+
+@media (max-width:1400px) {
+    .page-sections ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .page-sections ul {
+        gap: 0px;
+    }
+
+
+    .navbar-bottom img {
+        width: 140px;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .page-sections ul {
+        gap: 5px;
+    }
+
+    .navbar-bottom img {
+        display: none;
+    }
+
+    .navbar-bottom button {
+        min-width: 110px;
+    }
+    
+}
+
+@media (max-width:750px) {
+    .page-sections ul {
+        display: none;
+    }
+
+    .navbar-bottom img {
+        display:list-item;
+        width: 140px;
+    }
+
 }

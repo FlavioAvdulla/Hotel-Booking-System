@@ -135,11 +135,19 @@
 
 .blend-color {
     position: absolute;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(196, 155, 93, 0.623);
-    /* mix-blend-mode: multiply; */
+    transition: width 0.5s ease-in-out; /* Transition on width */
 }
+
+.hotel-news-section-01-image:hover .blend-color,
+.hotel-news-section-02-image:hover .blend-color,
+.hotel-news-section-03-image:hover .blend-color {
+    width: 0%; /* Set width to 0% on hover */
+}
+
 
 .hotel-news-section-01-image,
 .hotel-news-section-02-image,

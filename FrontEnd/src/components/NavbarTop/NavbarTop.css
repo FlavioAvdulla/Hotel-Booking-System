@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 /* ==================================== Navbar left */
 .navbar-left {
     display: flex;
@@ -17,7 +18,7 @@
 
 .credit-card {
     display: flex;
-    padding: 0px 40px 0px 0px;
+    margin: 0px 40px 0px 0px;
     align-items: center;
 }
 
@@ -27,45 +28,35 @@
 
 .fa-credit-card,
 .fa-circle-check {
-    padding: 2px 10px 0px 0px;
-    cursor: pointer;
-}
-
-.terms-conditions {
-    display: flex;
-    margin: 0px 40px 0px 0px;
-    align-items: center;
+    margin: 2px 10px 0px 0px;
     cursor: pointer;
 }
 
 .languages {
     display: flex;
-    gap: 20px; 
+    gap: 20px;
 }
+
 .languages p {
     cursor: pointer;
 }
-
-/* ==================================== Navbar right */
 
 .navbar-right {
     display: flex;
     align-items: center;
 }
 
-.fa-envelope {
-    padding: 2px 10px 0px 0px;
+.fa-envelope,
+.fa-star {
+    margin: 2px 10px 0px 0px;
     cursor: pointer;
 }
 
-.bookings {
+.bookings,
+.review,
+.terms-conditions {
     display: flex;
     align-items: center;
-    margin: 0px 40px 0px 0px;
-    cursor: pointer;
-}
-
-.review{
     margin: 0px 40px 0px 0px;
     cursor: pointer;
 }
@@ -89,7 +80,7 @@
     color: white;
 }
 
-.login-info .login-text{
+.login-info .login-text {
     font-weight: 700;
 }
 
@@ -97,4 +88,94 @@
     font-size: 30px;
     padding: 2px 15px 0px 0px;
     cursor: pointer;
+}
+
+@media (max-width:1200px) {
+
+    .bookings,
+    .review,
+    .terms-conditions,
+    .languages,
+
+    .credit-card {
+        display: flex;
+        align-items: center;
+        margin: 0px 15px 0px 0px;
+        cursor: pointer;
+    }
+
+    .login {
+        display: flex;
+        width: 150px;
+    }
+}
+
+@media (max-width:970px) {
+
+    /* ============================ NavbarTop */
+    .credit-card p {
+        display: none;
+    }
+
+    .fa-credit-card {
+        font-size: 18px;
+    }
+
+    .terms-conditions p {
+        display: none;
+    }
+
+    .fa-circle-check {
+        font-size: 18px;
+    }
+
+    .languages p {
+        font-size: 18px;
+    }
+
+    .bookings p {
+        display: none;
+    }
+
+    .fa-envelope {
+        font-size: 18px;
+    }
+
+    .review p {
+        display: none;
+    }
+
+    /* ============================ NavbarBottom */
+}
+
+@media (max-width:750px) {
+
+    /* ============================ NavbarTop */
+    .fa-envelope,
+    .credit-card,
+    .fa-star,
+    .review,
+    .bookings,
+    .terms-conditions {
+        margin: 0px 15px 0px 0px;
+    }
+
+    .languages {
+        display: none;
+    }
+
+    .login {
+        margin: 0px 0px 0px auto;
+        width: 150px;
+    }
+
+    .navbar-sections-top {
+        justify-content: start;
+    }
+
+    .navbar-right {
+        width: 90%;
+    }
+
+    /* ============================ NavbarBottom */
 }

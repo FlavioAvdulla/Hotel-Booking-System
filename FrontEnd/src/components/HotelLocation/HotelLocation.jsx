@@ -14,8 +14,10 @@ const HotelLocation = () => {
         </div>
         <div className="info-section">
           <div className="info">
+            <div className="info-title">
           <h2>LUXURY HOTEL & BEST RESPORT</h2>
           <h1>Discover our<br/><span>Location</span></h1>
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

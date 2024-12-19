@@ -53,8 +53,8 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    
-    
+
+
 }
 
 .video-design {
@@ -95,8 +95,7 @@
     z-index: 1;
 }
 
-.relax,
-.enjoy {
+.video-design-text span {
     color: var(--gold-color);
     font-size: 60px;
     font-weight: 400;
@@ -114,4 +113,121 @@
     z-index: 3;
     color: white;
     margin: 20px auto 0px auto;
+}
+
+@media (max-width: 1600px) {
+    .video-design-text {
+        width: 80%;
+    }
+
+    .video-design-text h1 {
+        font-size: 60px;
+    }
+
+    .video-design-text span {
+        font-size: 60px;
+    }
+
+    .video-pharagraph {
+        font-size: 20px;
+    }
+
+    .video-design-blend {
+        height: 60%;
+    }
+
+    .video-design {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .video-design-text {
+        width: 80%;
+        margin: 45px auto 3px auto;
+    }
+
+    .video-design-text span {
+        color: var(--gold-color);
+        font-size: 60px;
+    }
+
+    .video-design-text h1 {
+        font-size: 60px;
+    }
+
+    .video-pharagraph {
+        font-size: 20px;
+    }
+
+    .video-design {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .video-design-text span {
+        font-size: 55px;
+    }
+
+    .video-design-text h1 {
+        font-size: 55px;
+    }
+
+    .video-design {
+        width: 55%;
+    }
+
+    .video-design-text {
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .video-design-text span {
+        font-size: 55px;
+    }
+
+    .video-design-text h1 {
+        font-size: 55px;
+    }
+
+    .video-design {
+        width: 75%;
+    }
+
+    .video-design-text {
+        width: 70%;
+    }
+
+    .video-design-blend {
+        height: 55%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .video-design-text {
+        width: 70%;
+    }
+
+    .video-design-text span {
+        font-size: 43px;
+    }
+
+    .video-design-text h1 {
+        font-size: 43px;
+    }
+
+    .video-design {
+        width: 90%;
+    }
+
+    .video-design-blend {
+        height: 50%;
+    }
+    
 }

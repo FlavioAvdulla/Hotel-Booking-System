@@ -15,7 +15,7 @@
     width: 40%;
 }
 
-.hotel-bay-view-info h2{
+.hotel-bay-view-info h2 {
     font-size: 25px;
     font-weight: 300;
     margin: 0px 0px 50px 0px;
@@ -64,7 +64,7 @@
 @media (max-width:1000px) {
     .hotel-bay-view {
         flex-direction: column;
-        margin: 230px auto 100px auto;
+        margin: 130px auto 100px auto;
     }
 
     .hotel-bay-view-info {
@@ -83,5 +83,11 @@
     .hotel-bay-view-info button {
         width: 200px;
     }
-    
+}
+
+@media (max-width:750px) {
+    .hotel-bay-view {
+        flex-direction: column;
+        margin: 230px auto 100px auto;
+    }
 }

@@ -13,7 +13,9 @@ const HotelVideo = () => {
       <div className="video-section">
         <div className="video-design">
           <div className="video-design-text">
-            <h1><span>Relax</span> and <span>Enjoy</span> your Holiday</h1>
+            <h1>
+              <span>Relax</span> and <span>Enjoy</span> your Holiday
+            </h1>
             <p className="video-pharagraph">LUXURY HOTEL & BEST RESORT</p>
           </div>
           <div className="video-design-blend"></div>

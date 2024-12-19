@@ -71,7 +71,7 @@
     border: 1px solid var(--gold-color);
     font-size: 15px;
     font-weight: 300;
-    width: 8vw;
+    width: 11vw;
     padding: 8px;
     color: white;
     background-color: var(--gold-color);
@@ -144,7 +144,7 @@
     }
 
     .restaurant-section button {
-        width: 22vw;
+        width: 32vw;
     }
 }
 

@@ -33,7 +33,7 @@
 .hotel-video-head hr {
     margin: 0px 0px 7px 0px;
     border: 1px solid var(--gold-color);
-    width: 3%;
+    width: 40px;
     overflow: hidden;
 }
 

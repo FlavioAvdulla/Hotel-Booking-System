@@ -18,7 +18,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -110,4 +110,68 @@
     font-size: 16px;
     font-weight: 400;
     color: var(--dark-grey);
+}
+
+@media (max-width: 1300px) {
+    .hotel-footer-section-info {
+        width: 90%;
+    }
+
+    .news-letter-input button {
+        width: 100%;
+    }
+
+    .news-letter-input input {
+        width: 100%;
+        text-align: center;
+    }
+
+    .news-letter-input input {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .hotel-footer-section-info {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hotel-footer-section-info {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        gap: 60px;
+    }
+
+    .hotel-footer {
+        display: flex;
+        /* flex-direction: column; */
+        height: 100%;
+        margin: auto;
+        background-color: var(--dark-grey);
+    }
+
+    .news-letter-input button {
+        width: 90%;
+    }
+
+    .news-letter-input input {
+        width: 90%;
+        text-align: center;
+    }
+
+    .phone-support h2,
+    .connect-with-us h2,
+    .news-letter h2 {
+        margin: 0px 0px 30px 0px;
+    }
 }

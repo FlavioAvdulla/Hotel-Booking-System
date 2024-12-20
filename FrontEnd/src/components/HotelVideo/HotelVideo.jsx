@@ -8,7 +8,7 @@ const HotelVideo = () => {
       <div className="hotel-video-head">
         <h2>LUXURY HOTEL</h2>
         <hr />
-        <h1>BEST ROOMS</h1>
+        <h1>HOTEL TOUR</h1>
       </div>
       <div className="video-section">
         <div className="video-design">

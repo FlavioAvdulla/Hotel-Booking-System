@@ -1,8 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Header_02 from "../../assets/images/header_02.jpg";
 
+const months = [
+  "JAN",
+  "FEB",
+  "MAR",
+  "APR",
+  "MAY",
+  "JUN",
+  "JUL",
+  "AUG",
+  "SEP",
+  "OCT",
+  "NOV",
+  "DEC",
+];
+
 const Header = () => {
+  // Separate states for check-in and check-out month indexes
+  const [checkInMonthIndex, setCheckInMonthIndex] = useState(1);
+  const [checkOutMonthIndex, setCheckOutMonthIndex] = useState(1);
+
+  const validateDateInputCheckIn = (event) => {
+    const input = event.target;
+    const value = input.value;
+    const numericValue = value.replace(/[^0-9]/g, "");
+    const dateValue = parseInt(numericValue, 10);
+
+    if (!isNaN(dateValue) && dateValue >= 1 && dateValue <= 31) {
+      input.value = dateValue;
+    } else {
+      input.value = "";
+    }
+  };
+
+  const validateDateInputCheckOut = (event) => {
+    const input = event.target;
+    const value = input.value;
+    const numericValue = value.replace(/[^0-9]/g, "");
+    const dateValue = parseInt(numericValue, 10);
+
+    if (!isNaN(dateValue) && dateValue >= 1 && dateValue <= 31) {
+      input.value = dateValue;
+    } else {
+      input.value = "";
+    }
+  };
+
+  const changeMonthCheckIn = (direction) => {
+    setCheckInMonthIndex((prevIndex) => {
+      if (direction === "up") {
+        return (prevIndex + 1) % 12;
+      } else {
+        return (prevIndex - 1 + 12) % 12;
+      }
+    });
+  };
+
+  const changeMonthCheckOut = (direction) => {
+    setCheckOutMonthIndex((prevIndex) => {
+      if (direction === "up") {
+        return (prevIndex + 1) % 12;
+      } else {
+        return (prevIndex - 1 + 12) % 12;
+      }
+    });
+  };
+
   return (
     <div className="header">
       <img src={Header_02} alt={Header_02} />
@@ -26,55 +91,75 @@ const Header = () => {
 
           <div className="date-month">
             <div className="date">
-              <p>05</p>
+              <input type="text" onInput={validateDateInputCheckIn} placeholder="01" />
             </div>
 
             <div className="month">
-              <i className="fa-solid fa-chevron-up"></i>
-              <p>FEB</p>
-              <i className="fa-solid fa-chevron-down"></i>
+              <i
+                className="fa-solid fa-chevron-up"
+                onClick={() => changeMonthCheckIn("up")}
+              ></i>
+              <p>{months[checkInMonthIndex]}</p>
+              <i
+                className="fa-solid fa-chevron-down"
+                onClick={() => changeMonthCheckIn("down")}
+              ></i>
             </div>
           </div>
         </div>
 
         <div className="section-2">
-        <div className="check-in">
-            <p>CHECK IN</p>
+          <div className="check-in">
+            <p>CHECK OUT</p>
           </div>
 
           <div className="date-month">
             <div className="date">
-              <p>05</p>
+              <input type="text" onInput={validateDateInputCheckOut} placeholder="01" />
             </div>
 
             <div className="month">
-              <i className="fa-solid fa-chevron-up"></i>
-              <p>FEB</p>
-              <i className="fa-solid fa-chevron-down"></i>
+              <i
+                className="fa-solid fa-chevron-up"
+                onClick={() => changeMonthCheckOut("up")}
+              ></i>
+              <p>{months[checkOutMonthIndex]}</p>
+              <i
+                className="fa-solid fa-chevron-down"
+                onClick={() => changeMonthCheckOut("down")}
+              ></i>
             </div>
           </div>
         </div>
 
         <div className="section-3">
-        <div className="check-in">
-            <p>CHECK IN</p>
+          <div className="check-in">
+            <p>GUESTS</p>
           </div>
 
           <div className="date-month">
             <div className="date">
-              <p>05</p>
+              <input type="text" onInput={validateDateInputCheckIn} placeholder="01" />
             </div>
 
             <div className="month">
-              <i className="fa-solid fa-chevron-up"></i>
-              <p>FEB</p>
-              <i className="fa-solid fa-chevron-down"></i>
+              <i
+                className="fa-solid fa-chevron-up"
+              ></i>
+              <p></p>
+              <i
+                className="fa-solid fa-chevron-down"
+              ></i>
             </div>
           </div>
         </div>
 
         <div className="section-4">
-            <p>CHECK<br/>AVAILABILITY</p>
+          <p>
+            CHECK
+            <br />
+            AVAILABILITY
+          </p>
           <div className="section-4-overlay-black"></div>
         </div>
       </div>

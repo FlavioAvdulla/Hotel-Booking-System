@@ -211,15 +211,15 @@
 @media (max-width: 750px) {
 
     .video-design-text {
-        width: 70%;
+        width: 75%;
     }
 
     .video-design-text span {
-        font-size: 43px;
+        font-size: 40px;
     }
 
     .video-design-text h1 {
-        font-size: 43px;
+        font-size: 40px;
     }
 
     .video-design {

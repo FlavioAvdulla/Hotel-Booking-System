@@ -19,8 +19,9 @@ const months = [
 
 const Header = () => {
   // Separate states for check-in and check-out month indexes
-  const [checkInMonthIndex, setCheckInMonthIndex] = useState(1);
+  const [checkInMonthIndex, setCheckInMonthIndex] = useState(0);
   const [checkOutMonthIndex, setCheckOutMonthIndex] = useState(1);
+  const [guestNum, setGuestNum] = useState(1);
 
   const validateDateInputCheckIn = (event) => {
     const input = event.target;
@@ -48,6 +49,21 @@ const Header = () => {
     }
   };
 
+  const validateDateInputGuests = (event) => {
+    const input = event.target;
+    const value = input.value;
+    const numericValue = value.replace(/[^0-9]/g, "");
+    const guestValue = parseInt(numericValue, 10);
+
+    if (!isNaN(guestValue) && guestValue >= 1 && guestValue <= 6) {
+      setGuestNum(guestValue);
+      input.value = guestValue.toString().padStart(2, "0");
+    } else {
+      setGuestNum(0);
+      input.value = "";
+    }
+  };
+
   const changeMonthCheckIn = (direction) => {
     setCheckInMonthIndex((prevIndex) => {
       if (direction === "up") {
@@ -64,6 +80,16 @@ const Header = () => {
         return (prevIndex + 1) % 12;
       } else {
         return (prevIndex - 1 + 12) % 12;
+      }
+    });
+  };
+
+  const changeGuestNum = (direction) => {
+    setGuestNum((prevNum) => {
+      if (direction === "up") {
+        return prevNum < 6 ? prevNum + 1 : prevNum;
+      } else {
+        return prevNum > 1 ? prevNum - 1 : prevNum;
       }
     });
   };
@@ -91,7 +117,11 @@ const Header = () => {
 
           <div className="date-month">
             <div className="date">
-              <input type="text" onInput={validateDateInputCheckIn} placeholder="01" />
+              <input
+                type="text"
+                onInput={validateDateInputCheckIn}
+                placeholder="01"
+              />
             </div>
 
             <div className="month">
@@ -115,7 +145,11 @@ const Header = () => {
 
           <div className="date-month">
             <div className="date">
-              <input type="text" onInput={validateDateInputCheckOut} placeholder="01" />
+              <input
+                type="text"
+                onInput={validateDateInputCheckOut}
+                placeholder="01"
+              />
             </div>
 
             <div className="month">
@@ -139,16 +173,23 @@ const Header = () => {
 
           <div className="date-month">
             <div className="date">
-              <input type="text" onInput={validateDateInputCheckIn} placeholder="01" />
+              <input
+                type="text"
+                onInput={validateDateInputGuests}
+                placeholder="01"
+                value={guestNum === 0 ? "" : guestNum.toString().padStart(2, "0")}
+              />
             </div>
 
             <div className="month">
               <i
                 className="fa-solid fa-chevron-up"
+                onClick={() => changeGuestNum("up")}
               ></i>
               <p></p>
               <i
                 className="fa-solid fa-chevron-down"
+                onClick={() => changeGuestNum("down")}
               ></i>
             </div>
           </div>

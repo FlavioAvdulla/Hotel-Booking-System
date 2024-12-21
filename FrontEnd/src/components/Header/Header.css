@@ -124,17 +124,10 @@
 }
 
 
-
 .section-4 p {
     font-size: 20px;
     font-weight: 300;
     color: white;
-}
-
-.section-4:hover {
-    border: 2px solid var(--black-color-transparency);
-    /* background: transparent; */
-
 }
 
 .check-in {
@@ -168,6 +161,11 @@
     border-radius: 10px;
 }
 
+.date input::placeholder {
+    color: black; /* Change this to your desired color */
+  }
+  
+
 .month p {
     font-family: "Bahnschrift Condensed", sans-serif;
     font-size: 25px;
@@ -180,6 +178,9 @@
     cursor: pointer;
 }
 
+.section-3 .month {
+    gap: 15px;
+}
 
 @media (max-width:1400px) {
     .first-container h1 {
@@ -257,6 +258,24 @@
     
     .month p {
         font-size: 15px;
+    }
+
+    .date input {
+        width: 60px;
+        height: 60px;
+        padding: 15px 8px 8px 8px;
+        border: none;
+        background-color: #00000010;
+        outline: none;
+        text-align: center;
+        font-size: 45px;
+        font-family: "Bahnschrift Condensed", sans-serif;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .section-3 .month {
+        gap: 8px;
     }
     
 }

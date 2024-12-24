@@ -8,39 +8,52 @@
 .rooms-container {
     width: 85%;
     margin: 100px auto 100px auto;
-    background-color: rgb(237, 237, 237);
+    /* background-color: rgb(237, 237, 237); */
 }
 
 .photo-section {
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     width: 100%;
     height: 70vh;
     gap: 20px;
 }
 
 .photo-section-01 {
-    background-color: rgb(56, 221, 221);
+    /* background-color: rgb(56, 221, 221); */
     width: 50%;
     height: 100%;
 }
 
 .photo-section-02 {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(56, 221, 221);
+    display: grid;
     width: 50%;
     height: 100%;
     gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .photo-01,
-.photo-02 {
-    background-color: rgb(255, 231, 200);
-    height: 50%;
+.photo-02,
+.photo-03,
+.photo-04 {
+    /* background-color: rgb(255, 231, 200); */
+    height:100%;
     width: 100%;
+    /* overflow: hidden; */
 }
 
+.photo-01 img,
+.photo-02 img,
+.photo-03 img,
+.photo-04 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*================================ Room Info */
 .room-info {
     margin: 40px auto 40px auto;
     gap: 40px;
@@ -65,11 +78,13 @@
 .room-price h1 {
     font-size: 30px;
     font-weight: 400;
+    color: var(--grey-color);
 }
 
 .room-price p {
     font-size: 25px;
     font-weight: 400;
+    color: var(--grey-color);
 }
 
 .room-price span {
@@ -117,7 +132,7 @@
 .fa-users,
 .fa-couch,
 .fa-calendar-xmark {
-    color: var(--dark-grey);
+    color: var(--gold-color);
     font-size: 30px;
 }
 
@@ -141,8 +156,127 @@
 .room-detail-04-text h2 {
     font-size: 17px;
     margin: 0px 0px 4px 0px;
+    color: var(--grey-color);
 }
 
+.room-detail-01-text p,
+.room-detail-02-text p,
+.room-detail-03-text p,
+.room-detail-04-text p {
+    color: var(--grey-color);
+}
+
+
+/*================================ Room About */
 .room-about {
     display: flex;
+    /* height: 100%; */
+    /* width: 100%; */
+    gap: 50px;
+}
+
+.room-about-left {
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--light-grey);
+}
+
+.room-about-right {
+    width: 30%;
+    /* background-color: antiquewhite; */
+}
+
+.room-about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-about-description h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.room-about-description hr {
+    margin: 15px 0px 10px 0px;
+}
+
+.room-about-description p {
+    line-height: 30px;
+    text-align: justify;
+    text-align-last: left;
+    color: var(--grey-color);
+}
+
+
+
+.room-about-icons {
+    display: flex;
+    gap: 70px;
+    margin: 40px 0px 0px 0px;
+}
+
+.icon-section-01,
+.icon-section-02,
+.icon-section-03 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* background-color: #ffc800; */
+}
+
+.kitchen,
+.breakfast,
+.tv,
+.free-parking,
+.laptop-friendly,
+.washer,
+.first-aid-kit,
+.wifi,
+.restaurants,
+.business-centre,
+.sun-terrace,
+.concierge-service {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kitchen p,
+.breakfast p,
+.tv p,
+.free-parking p,
+.laptop-friendly p,
+.washer p,
+.first-aid-kit p,
+.wifi p,
+.restaurants p,
+.business-centre p,
+.sun-terrace p,
+.concierge-service p {
+    color: var(--grey-color);
+}
+
+/*================================ Icons */
+
+.fa-utensils,
+.fa-mug-saucer,
+.fa-tv,
+.fa-car,
+.fa-laptop,
+.fa-soap,
+.fa-kit-medical,
+.fa-wifi,
+.fa-utensils,
+.fa-landmark,
+.fa-umbrella-beach,
+.fa-bell-concierge {
+    color: var(--gold-color);
+    font-size: 20px;
+    /* text-align: justify; */
+    width: 25px;
+    justify-content: flex-end;
 }

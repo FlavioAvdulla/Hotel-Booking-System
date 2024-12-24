@@ -24,7 +24,7 @@ const Hotel_Footer = () => {
 
           <div className="news-letter">
             <h1>NEWSLETTER</h1>
-            <h2>Sign up for speciial offers!</h2>
+            <h2>Sign up for special offers!</h2>
             <div className="news-letter-input">
               <input
                 type="text"

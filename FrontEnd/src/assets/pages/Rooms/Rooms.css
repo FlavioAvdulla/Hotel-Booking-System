@@ -1,0 +1,148 @@
+.rooms {
+    display: flex;
+    /* background-color: rgb(238, 247, 255); */
+    width: 100%;
+    height: 100%
+}
+
+.rooms-container {
+    width: 85%;
+    margin: 100px auto 100px auto;
+    background-color: rgb(237, 237, 237);
+}
+
+.photo-section {
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: 70vh;
+    gap: 20px;
+}
+
+.photo-section-01 {
+    background-color: rgb(56, 221, 221);
+    width: 50%;
+    height: 100%;
+}
+
+.photo-section-02 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 221, 221);
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+
+.photo-01,
+.photo-02 {
+    background-color: rgb(255, 231, 200);
+    height: 50%;
+    width: 100%;
+}
+
+.room-info {
+    margin: 40px auto 40px auto;
+    gap: 40px;
+}
+
+.room-rating {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    margin: 0px auto 20px auto;
+}
+
+.room-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star-half-stroke {
+    color: #ffc800;
+}
+
+.room-price h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.room-price p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.room-price span {
+    font-size: 20px;
+    font-weight: 300;
+    /* color: #ffc800; */
+}
+
+.room-details {
+    display: flex;
+    height: 60px;
+    margin: 40px auto 40px auto;
+    gap: 20px;
+}
+
+.room-detail-01,
+.room-detail-02,
+.room-detail-03,
+.room-detail-04 {
+    width: 25%;
+    height: 100%;
+}
+
+.room-detail-01,
+.room-detail-02,
+.room-detail-03,
+.room-detail-04 {
+    display: flex;
+}
+
+.room-detail-01-icon,
+.room-detail-02-icon,
+.room-detail-03-icon,
+.room-detail-04-icon {
+    display: flex;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    /* border-radius: 0px 15px 15px 0px; */
+}
+
+.fa-hotel,
+.fa-users,
+.fa-couch,
+.fa-calendar-xmark {
+    color: var(--dark-grey);
+    font-size: 30px;
+}
+
+.room-detail-01-text,
+.room-detail-02-text,
+.room-detail-03-text,
+.room-detail-04-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    /* background-color: #ffc800; */
+}
+
+.room-detail-01-text h2,
+.room-detail-02-text h2,
+.room-detail-03-text h2,
+.room-detail-04-text h2 {
+    font-size: 17px;
+    margin: 0px 0px 4px 0px;
+}
+
+.room-about {
+    display: flex;
+}

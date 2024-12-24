@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./NavbarBottom.css";
 import Hotel_Bookin_Logo_White from "../../assets/images/Hotel_Bookin_Logo_White.svg";
 
@@ -11,41 +12,41 @@ const NavbarBottom = () => {
         <img src={Hotel_Bookin_Logo_White} alt="Hotel Booking Logo" />
         <div className="page-sections">
           <ul>
-            <li 
-              className={activeSection === "Home" ? "active" : ""} 
+            <li
+              className={activeSection === "Home" ? "active" : ""}
               onClick={() => setActiveSection("Home")}
             >
-              Home
+              <Link to="/">Home</Link>
             </li>
-            <li 
-              className={activeSection === "Rooms" ? "active" : ""} 
+            <li
+              className={activeSection === "Rooms" ? "active" : ""}
               onClick={() => setActiveSection("Rooms")}
             >
-              Rooms
+              <Link to="/rooms">Rooms</Link>
             </li>
-            <li 
-              className={activeSection === "About us" ? "active" : ""} 
+            <li
+              className={activeSection === "About us" ? "active" : ""}
               onClick={() => setActiveSection("About us")}
             >
-              About us
+              <Link to="/about-us">About us</Link>
             </li>
-            <li 
-              className={activeSection === "Pages" ? "active" : ""} 
+            <li
+              className={activeSection === "Pages" ? "active" : ""}
               onClick={() => setActiveSection("Pages")}
             >
-              Pages
+              <Link to="/pages">Pages</Link>
             </li>
-            <li 
-              className={activeSection === "News" ? "active" : ""} 
+            <li
+              className={activeSection === "News" ? "active" : ""}
               onClick={() => setActiveSection("News")}
             >
-              News
+              <Link to="/news">News</Link>
             </li>
-            <li 
-              className={activeSection === "Contact" ? "active" : ""} 
+            <li
+              className={activeSection === "Contact" ? "active" : ""}
               onClick={() => setActiveSection("Contact")}
             >
-              Contact
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

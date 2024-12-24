@@ -1,0 +1,273 @@
+.best-rooms {
+    display: flex;
+    height: 100%;
+    margin: 100px auto 100px auto;
+    background-color: var(--light-grey);
+}
+
+.best-rooms-head {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 85%;
+    margin: 100px auto 100px auto;
+    /* background-color: beige; */
+    align-items: center;
+}
+
+.best-rooms-head h2 {
+    font-weight: 300;
+    font-size: 19px;
+    margin: 0px 0px 12px 0px;
+    color: var(--gold-color);
+}
+
+.best-rooms-head h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.best-rooms-head hr {
+    margin: 0px 0px 7px 0px;
+    border: 1px solid var(--gold-color);
+    width: 40px;
+}
+
+
+.best-rooms-left img {
+    width: 100%;
+}
+
+.best-rooms-left-info h1 {
+    font-size: 22px;
+    /* margin: 0px 0px 3% 0px; */
+}
+
+.fa-circle-user {
+    font-size: 22px;
+}
+
+.best-rooms-left-icons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0px 0px 0px 2px;
+    color: var(--grey-color);
+}
+
+.fa-circle-user {
+    color: #9b9b9b;
+}
+
+.best-rooms-left-icons p {
+    font-weight: 400;
+    margin: 0px 0px 2px 0px;
+}
+
+.best-rooms-left-icons img {
+    width: 20px;
+}
+
+.description {
+    text-align: justify;
+    color: var(--grey-color);
+}
+
+.best-rooms-left-info button {
+    border: 1px solid var(--gold-color);
+    font-size: 15px;
+    font-weight: 300;
+    /* margin: 0 auto; */
+    width: 12vw;
+    padding: 8px;
+    color: white;
+    background-color: var(--gold-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.best-rooms-left-info button:hover {
+    background-color: transparent;
+    scale: 105%;
+    color: var(--dark-grey);
+}
+
+.best-rooms-container {
+    display: flex;
+    width: 80%;
+    height: 78%;
+    gap: 20px;
+    margin: 30px 0 0 0;
+    align-items: stretch; /* Ensures both children stretch to the same height */
+}
+
+.best-rooms-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.best-rooms-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.best-rooms-right-photos {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* aspect-ratio: 1 / 1; */
+}
+
+.best-rooms-right-photos img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.best-rooms-right-photos {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* aspect-ratio: 1 / 1; */
+}
+
+.best-rooms-left-info {
+    padding: 0px 20px 10px 20px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+@media (min-width: 1200px) {
+    .best-rooms-left-info {
+        padding: 8px 40px 20px 40px;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .best-rooms {
+        height: 100%;
+    }
+
+    .best-rooms-head {
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto 100px auto;
+        width: 100%;
+        height: 100%;
+        /* background-color: beige; */
+        align-items: center;
+    }
+
+    .best-rooms-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .best-rooms-left {
+        width: 80%;
+        height: 100%;
+        /* margin: 20px auto; */
+    }
+
+    .best-rooms-right {
+        width: 80%;
+        margin: auto;
+    }
+
+    .best-rooms-left-info button {
+        width: 20vw;
+    }
+
+    .best-rooms-right-photos {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        /* aspect-ratio: 1 / 1; */
+    }
+
+    .best-rooms-left-info h1 {
+        margin: 0px 0px 18px 0px;
+    }
+
+    .description,
+    .best-rooms-left-icons {
+        margin: 0px 0px 18px 0px;
+    }
+
+    .best-rooms-left-info {
+        padding: 40px 40px;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50%;
+    }
+}
+
+
+@media(max-width: 750px) {
+
+    .best-rooms {
+        height: 100%;
+    }
+
+    .best-rooms-head {
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto 100px auto;
+        width: 100%;
+        height: 100%;
+        /* background-color: beige; */
+        align-items: center;
+    }
+
+    .best-rooms-left {
+        width: 80%;
+        height: 100%;
+    }
+
+    .best-rooms-right-photos {
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* aspect-ratio: 1 / 1; */
+    }
+
+    .best-rooms-left-info button {
+        width: 50%;
+    }
+
+    .best-rooms-left-info h1 {
+        margin: 0px 0px 18px 0px;
+    }
+
+    .description,
+    .best-rooms-left-icons {
+        margin: 0px 0px 18px 0px;
+    }
+
+}

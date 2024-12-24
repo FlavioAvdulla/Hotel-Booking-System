@@ -27,7 +27,7 @@
     gap: 40px;
 }
 
-.page-sections li {
+.page-sections li{
     text-align: center;
     width: 100px;
     list-style: none;
@@ -35,7 +35,7 @@
     font-weight: 300;
     align-items: center;
     cursor: pointer;
-    font-size: 17px;
+    /* font-size: 17px; */
     position: relative;
 }
 

@@ -1,0 +1,93 @@
+.hotel-bay-view {
+    display: flex;
+    width: 85%;
+    margin: 130px auto 100px auto;
+    justify-content: space-between;
+    gap: 100px;
+    /* background-color: antiquewhite; */
+}
+
+.hotel-bay-view-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+}
+
+.hotel-bay-view-info h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0px 0px 50px 0px;
+}
+
+.h1-thin {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.h1-bold {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0px 0px 50px 0px;
+}
+
+.hotel-bay-view-info p {
+    text-align: justify;
+    text-align-last: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.hotel-bay-view-right img {
+    width: 45vw;
+}
+
+.hotel-bay-view-info button {
+    border: 1px solid var(--gold-color);
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto;
+    width: 200px;
+    padding: 8px;
+    color: white;
+    background-color: var(--gold-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.hotel-bay-view-info button:hover {
+    background-color: transparent;
+    scale: 105%;
+    color: var(--dark-grey);
+}
+
+@media (max-width:1000px) {
+    .hotel-bay-view {
+        flex-direction: column;
+        margin: 130px auto 100px auto;
+    }
+
+    .hotel-bay-view-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hotel-bay-view-right img {
+        width: 80vw;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .hotel-bay-view-info button {
+        width: 200px;
+    }
+}
+
+@media (max-width:750px) {
+    .hotel-bay-view {
+        flex-direction: column;
+        margin: 230px auto 100px auto;
+    }
+}

@@ -6,7 +6,7 @@ import room_03 from "../../../assets/images/rooms/room_03.jpg";
 import room_04 from "../../../assets/images/rooms/room_04.jpg";
 import room_05 from "../../../assets/images/rooms/room_05.jpg";
 import room_06 from "../../../assets/images/rooms/room_06.jpg";
-
+import room_07 from "../../../assets/images/rooms/room_07.jpg";
 
 const Rooms = () => {
   return (
@@ -47,15 +47,20 @@ const Rooms = () => {
         </div>
         <hr />
         <div className="room-details">
+
           <div className="room-detail-01">
+
             <div className="room-detail-01-icon">
               <i className="fa-solid fa-hotel"></i>
             </div>
+
             <div className="room-detail-01-text">
               <h2>Entire room</h2>
               <p>All for your needs.</p>
             </div>
+            
           </div>
+
           <div className="room-detail-02">
             <div className="room-detail-02-icon">
               <i className="fa-solid fa-users"></i>
@@ -163,6 +168,48 @@ const Rooms = () => {
           </div>
           <div className="room-about-right">
             <img src={room_04} alt={room_04} />
+          </div>
+        </div>
+      </div>
+      <div className="banner">
+        <img src={room_07} alt={room_07} />
+      </div>
+      <div className="rooms-rates">
+        <div className="rooms-rates-content">
+          <div className="rooms-rates-content-title">
+            <h1>ROOMS RATES</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+              <br /> Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+          </div>
+          <div className="rooms-rates-content-info">
+            <div className="high-season">
+              <h2>High Season</h2>
+              <div className="high-season-details">
+                <p><span>499.00 $</span> / apartment / night</p>
+                <p>May 15th to October 15th 2018</p>
+                <button>CHECK AVAILABILITY</button>
+              </div>
+            </div>
+            <div className="medium-season">
+              <h2>High Season</h2>
+              <div className="medium-season-details">
+                <p><span>499.00 $</span> / apartment / night</p>
+                <p>May 15th to October 15th 2018</p>
+                <button>CHECK AVAILABILITY</button>
+              </div>
+            </div>
+            <div className="low-season">
+              <h2>High Season</h2>
+              <div className="low-season-details">
+                <p><span>499.00 $</span> / apartment / night</p>
+                <p>May 15th to October 15th 2018</p>
+                <button>CHECK AVAILABILITY</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -195,7 +195,7 @@ const Rooms = () => {
               </div>
             </div>
             <div className="medium-season">
-              <h2>High Season</h2>
+              <h2>Medium Season</h2>
               <div className="medium-season-details">
                 <p><span>499.00 $</span> / apartment / night</p>
                 <p>May 15th to October 15th 2018</p>
@@ -203,7 +203,7 @@ const Rooms = () => {
               </div>
             </div>
             <div className="low-season">
-              <h2>High Season</h2>
+              <h2>Low Season</h2>
               <div className="low-season-details">
                 <p><span>499.00 $</span> / apartment / night</p>
                 <p>May 15th to October 15th 2018</p>

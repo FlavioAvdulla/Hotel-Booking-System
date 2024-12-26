@@ -173,11 +173,9 @@
 }
 
 .room-about-left {
-    width: 70%;
-    height: 100%;
-    padding: 40px;
-    /* background-color: var(--light-grey); */
-}
+        width: 100%;
+        height: 100%;
+    }
 
 .room-about-right {
     width: 30%;
@@ -212,20 +210,21 @@
 
 .room-about-icons {
     display: flex;
-    gap: 70px;
+    gap: 20px;
     margin: 40px 0px 0px 0px;
     /* background-color: #fff6d7; */
 }
 
+
 .icon-section-01,
-.icon-section-02,
-.icon-section-03 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    /* background-color: #ffc800; */
-}
+    .icon-section-02,
+    .icon-section-03 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: #ffc800; */
+    }
 
 .kitchen,
 .breakfast,
@@ -395,7 +394,44 @@
     scale: 105%;
 }
 
-@media(max-width: 900px) {
+@media(min-width: 1200px) and (max-width: 1400px) {
+    .room-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 220px;
+    }
+
+    .room-detail-01,
+    .room-detail-02,
+    .room-detail-03,
+    .room-detail-04 {
+        width: 100%;
+    }
+
+    .room-detail-01-text,
+    .room-detail-02-text,
+    .room-detail-03-text,
+    .room-detail-04-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 0px 0px 0px 40px;
+        height: 100%;
+        width: 100%;
+        /* background-color: #ffc800; */
+    }
+
+    .room-detail-01-text h2,
+    .room-detail-02-text h2,
+    .room-detail-03-text h2,
+    .room-detail-04-text h2 {
+        font-size: 18px;
+        margin: 0px 0px 15px 0px;
+    }
+}
+
+@media(max-width: 1200px) {
     .photo-section {
         display: flex;
         flex-direction: column;
@@ -424,7 +460,6 @@
     .room-detail-03,
     .room-detail-04 {
         width: 100%;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.097);
     }
 
     /*========================== Room About */
@@ -433,6 +468,7 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+        /* background-color: #fff6d4; */
     }
 
     .room-about-icons {
@@ -445,7 +481,7 @@
     .room-about-left {
         width: 100%;
         height: 100%;
-        padding: 40px;
+        padding: 0px;
     }
 
 
@@ -455,7 +491,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         /* background-color: #ffc800; */
     }
 
@@ -482,8 +517,8 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        padding: 10px;
-        
+        padding: 15px;
+
     }
 
     .room-about-right img {
@@ -492,4 +527,56 @@
         object-fit: cover;
     }
 
+    /*========================== Room Info */
+    .room-price h1 {
+        font-size: 25px;
+    }
+
+    .room-price p {
+        font-size: 20px;
+    }
+
+    .room-price span {
+        font-size: 15px;
+    }
+
+    /*========================== Room Rates */
+    .rooms-rates-content-info {
+        width: 100%;
+    }
+
+    .high-season-details,
+    .medium-season-details,
+    .low-season-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .high-season,
+    .medium-season,
+    .low-season {
+        margin: 15px auto 40px auto;
+    }
+
+    .high-season h2,
+    .medium-season h2,
+    .low-season h2 {
+        text-align: center;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .high-season-details p,
+    .medium-season-details p,
+    .low-season-details p {
+        margin: 0px 0px 15px 0px;
+    }
+
+}
+
+@media(max-width: 750px) {
+    .room-details {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
 }

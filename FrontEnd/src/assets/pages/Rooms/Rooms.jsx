@@ -47,9 +47,7 @@ const Rooms = () => {
         </div>
         <hr />
         <div className="room-details">
-
           <div className="room-detail-01">
-
             <div className="room-detail-01-icon">
               <i className="fa-solid fa-hotel"></i>
             </div>
@@ -58,7 +56,6 @@ const Rooms = () => {
               <h2>Entire room</h2>
               <p>All for your needs.</p>
             </div>
-            
           </div>
 
           <div className="room-detail-02">
@@ -189,7 +186,9 @@ const Rooms = () => {
             <div className="high-season">
               <h2>High Season</h2>
               <div className="high-season-details">
-                <p><span>499.00 $</span> / apartment / night</p>
+                <p>
+                  <span>499.00 $</span> / apartment / night
+                </p>
                 <p>May 15th to October 15th 2018</p>
                 <button>CHECK AVAILABILITY</button>
               </div>
@@ -197,7 +196,9 @@ const Rooms = () => {
             <div className="medium-season">
               <h2>Medium Season</h2>
               <div className="medium-season-details">
-                <p><span>499.00 $</span> / apartment / night</p>
+                <p>
+                  <span>499.00 $</span> / apartment / night
+                </p>
                 <p>May 15th to October 15th 2018</p>
                 <button>CHECK AVAILABILITY</button>
               </div>
@@ -205,7 +206,9 @@ const Rooms = () => {
             <div className="low-season">
               <h2>Low Season</h2>
               <div className="low-season-details">
-                <p><span>499.00 $</span> / apartment / night</p>
+                <p>
+                  <span>499.00 $</span> / apartment / night
+                </p>
                 <p>May 15th to October 15th 2018</p>
                 <button>CHECK AVAILABILITY</button>
               </div>

@@ -1,17 +1,56 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./NavbarBottom.css";
 import Hotel_Bookin_Logo_White from "../../assets/images/Hotel_Bookin_Logo_White.svg";
 
 const NavbarBottom = () => {
-  const [activeSection, setActiveSection] = useState("Home");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [activeSection, setActiveSection] = useState("/");
+  const [mobileMenu, setMobileMenu] = useState(true);
+
+  const toggleMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setActiveSection("Home");
+    } else if (path.includes("/rooms")) {
+      setActiveSection("Rooms");
+    } else if (path.includes("/about-us")) {
+      setActiveSection("About us");
+    } else if (path.includes("/pages")) {
+      setActiveSection("Pages");
+    } else if (path.includes("/news")) {
+      setActiveSection("News");
+    } else if (path.includes("/contact")) {
+      setActiveSection("Contact");
+    }
+  }, [location]);
+
+  const handleLogoClick = () => {
+    navigate("/");
+    setActiveSection("Home");
+  };
 
   return (
     <div className="navbar-bottom">
       <div className="navbar-sections-bottom">
-        <img src={Hotel_Bookin_Logo_White} alt="Hotel Booking Logo" />
+        <i
+          className={`fa-solid fa-bars ${
+            mobileMenu ? "open-icon" : "closed-icon"
+          }`}
+          onClick={toggleMenu}
+        ></i>
+        <img
+          src={Hotel_Bookin_Logo_White}
+          alt="Hotel Booking Logo"
+          onClick={handleLogoClick}
+        />
         <div className="page-sections">
-          <ul>
+          <ul className={`navbar-menu ${mobileMenu ? "open" : "closed"}`}>
             <li
               className={activeSection === "Home" ? "active" : ""}
               onClick={() => setActiveSection("Home")}

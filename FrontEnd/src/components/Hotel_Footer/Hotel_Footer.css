@@ -15,7 +15,7 @@
 }
 
 .hotel-footer-section-info {
-    margin: auto;
+    margin: 0px auto 0px auto;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -113,6 +113,12 @@
 }
 
 @media (max-width: 1300px) {
+
+    .hotel-footer-section {
+        display: flex;
+        margin: 0px auto 0px auto;
+    }
+
     .hotel-footer-section-info {
         width: 90%;
     }
@@ -122,13 +128,10 @@
     }
 
     .news-letter-input input {
-        width: 100%;
+        width: 300px;
         text-align: center;
-    }
-
-    .news-letter-input input {
-        width: 100%;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -143,12 +146,11 @@
 }
 
 @media (max-width: 900px) {
+
     .hotel-footer-section-info {
-        margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 80%;
+        width: 300px;
         gap: 60px;
     }
 
@@ -161,11 +163,11 @@
     }
 
     .news-letter-input button {
-        width: 90%;
+        width: 300px;
     }
 
     .news-letter-input input {
-        width: 90%;
+        width: 300px;
         text-align: center;
     }
 
@@ -173,5 +175,9 @@
     .connect-with-us h2,
     .news-letter h2 {
         margin: 0px 0px 30px 0px;
+    }
+
+    .hotel-footer-section_copyright p{
+        font-size: 14px;
     }
 }

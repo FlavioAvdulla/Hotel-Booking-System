@@ -1,0 +1,490 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(238, 247, 255); */
+    width: 100%;
+    height: 100%
+}
+
+.about-us-container {
+    width: 85%;
+    margin: 100px auto 100px auto;
+    background-color: rgb(214, 110, 110);
+}
+
+.section-01 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.363);
+    overflow: hidden;
+}
+
+.banner-info {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.banner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 0px auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+.banner-info h1 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+
+}
+
+.banner-info p {
+    display: flex;
+    text-align: center;
+    /* background-color: aliceblue; */
+    margin: 0px auto 0px auto;
+    width: 50%;
+    font-weight: 300;
+    color: white;
+    justify-content: center;
+}
+
+.banner-info button {
+    display: flex;
+    border: 1px solid var(--gold-color);
+    width: 200px;
+    font-weight: 300;
+    margin: 0px auto 0px auto;
+    background-color: rgba(0, 0, 0, 0.297);
+    padding: 12px 7px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.banner-info button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    scale: 105%;
+}
+
+.fa-arrow-right {
+    margin: 0px 20px 0px 20px;
+    font-size: 10px;
+    color: var(--gold-color);
+}
+
+/* ========================= section-02 */
+
+.section-02 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grey);
+    margin: 0px auto 0px;
+}
+
+.section-02-container {
+    margin: 100px auto 100px;
+}
+
+.section-02-content {
+    display: flex;
+    width: 80%;
+    height: 700px;
+    margin: 0px auto;
+    /* background-color: rgb(209, 176, 133); */
+    /* gap: 20px; */
+}
+
+.section-02-content-photo {
+    width: 50%;
+    height: 100%;
+}
+
+.section-02-content-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-02-content-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 150px 40px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.ticks {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+}
+
+.tick-01,
+.tick-02,
+.tick-03 {
+    display: flex;
+    margin: 0px 0px 10px 0px;
+}
+
+.tick-01 p,
+.tick-02 p,
+.tick-03 p {
+    color: var(--grey-dark);
+}
+
+.fa-circle-check {
+    color: var(--gold-color);
+}
+
+.section-02-content-info h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-02-content-info h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-02-content-info p {
+    color: var(--grey-color);
+    font-weight: 300;
+}
+
+.section-02-content-info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold-color);
+    width: 170px;
+    font-weight: 300;
+    background-color: var(--gold-color);
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    gap: 20px;
+}
+
+.section-02-content-info button:hover {
+    background-color: transparent;
+    color: var(--grey-dark);
+    scale: 105%;
+}
+
+.section-02-content-info .fa-arrow-right {
+
+    color: white;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+}
+
+.section-02-content-info button:hover .fa-arrow-right {
+    color: var(--hover-color);
+    /* Change this to the color you want on hover */
+}
+
+/* ========================= section-03 */
+
+.section-03 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    /* background-color: rgb(146, 72, 72); */
+}
+
+.section-03-container {
+    margin: 0px auto 0px;
+    /* background-color: aliceblue; */
+}
+
+.section-03-content {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin: 0px auto;
+}
+
+.section-03-content-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 200px 40px;
+    justify-content: space-between;
+    /* background-color: white; */
+}
+
+.section-03-content-info h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-03-content-info h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-03-content-info p {
+    /* color: var(--grey-color); */
+    font-weight: 300;
+}
+
+.section-03-content-info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold-color);
+    width: 170px;
+    font-weight: 300;
+    background-color: var(--gold-color);
+    padding: 7px;
+    color: white;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    gap: 20px;
+}
+
+.section-03-content-info button:hover {
+    background-color: transparent;
+    color: var(--grey-dark);
+    scale: 105%;
+}
+
+.section-03-content-info .fa-arrow-right {
+
+    color: white;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+}
+
+.section-03-content-info button:hover .fa-arrow-right {
+    color: var(--hover-color);
+    /* Change this to the color you want on hover */
+}
+
+.section-03-icons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(76, 115, 150); */
+}
+
+.section-03-icons-content {
+    display: grid;
+    margin: auto;
+    width: 70%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon-01,
+.icon-02,
+.icon-03,
+.icon-04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    background-color: var(--light-grey);
+}
+
+.icon-01 {
+    border-radius: 50px 0px 50px 0px;
+}
+
+.icon-02 {
+    border-radius: 0px 50px 0px 50px;
+}
+
+.icon-03 {
+    border-radius: 0px 50px 0px 50px;
+}
+
+.icon-04 {
+    border-radius: 50px 0px 50px 0px;
+}
+
+.icon-01 img,
+.icon-02 img,
+.icon-03 img,
+.icon-04 img {
+    width: 50px;
+}
+
+.icon-01 p,
+.icon-02 p,
+.icon-03 p,
+.icon-04 p {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+/* ========================= section-03 */
+
+.section-04 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    /* background-color: rgb(146, 72, 72); */
+}
+
+.section-04-container {
+    margin: 0px auto 100px;
+    background-color: var(--dark-grey);
+}
+
+.section-04-content {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+.section-04-content-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 70px 40px;
+    justify-content: space-between;
+    /* background-color: white; */
+}
+
+.section-04-content-photo {
+    width: 50%;
+    height: 100%;
+}
+
+.section-04-content-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-04-content-info h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-04-content-info h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-04-content-info p {
+    color: white;
+    font-weight: 300;
+}
+
+.section-04-content-info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold-color);
+    width: 170px;
+    font-weight: 300;
+    background-color: var(--gold-color);
+    padding: 7px;
+    margin: 10px 0px 0px 0px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    gap: 20px;
+}
+
+.section-04-content-info button:hover {
+    background-color: transparent;
+    color: white;
+    scale: 105%;
+}
+
+.section-04-content-info .fa-arrow-right {
+
+    color: white;
+    padding: 2px 0px 0px 0px;
+    margin: 0px;
+}
+
+.section-04-content-info button:hover .fa-arrow-right {
+    color: var(--hover-color);
+    /* Change this to the color you want on hover */
+}
+
+/* ========================= section-05 */
+
+.section-05 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.section-05-container {
+    margin: 0px auto 100px;
+}
+
+.section-05-content {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+    background-color: aliceblue;
+    gap: 20px;
+}
+
+.section-05-content-photo-01,
+.section-05-content-photo-02,
+.section-05-content-photo-03,
+.section-05-content-photo-04,
+.section-05-content-photo-05,
+.section-05-content-photo-06 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: antiquewhite;
+}
+
+.section-05-content-photo-01 img,
+.section-05-content-photo-02 img,
+.section-05-content-photo-03 img,
+.section-05-content-photo-04 img,
+.section-05-content-photo-05 img,
+.section-05-content-photo-06 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

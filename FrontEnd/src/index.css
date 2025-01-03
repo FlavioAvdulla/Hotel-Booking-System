@@ -10,7 +10,7 @@
     --black-color-transparency: rgba(0, 0, 0, 0.849);
     --light-grey: rgba(247, 247, 247);
     --grey-color: rgba(117, 117, 117);
-    --dark-grey: rgba(43, 43, 43);
+    --dark-grey: rgb(31, 31, 31);
 }
 
 body {

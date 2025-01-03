@@ -12,6 +12,7 @@ import HotelVideo from "./components/Home/HotelVideo/HotelVideo";
 import HotelNews from "./components/Home/HotelNews/HotelNews";
 import Hotel_Footer from "./components/Hotel_Footer/Hotel_Footer";
 import Rooms from "./assets/pages/Rooms/Rooms";
+import AboutUs from "./assets/pages/AboutUs/AboutUs";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <NavbarBottom />
         <Routes>
           <Route path="/rooms" element={<Rooms />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/" element={<>
             <Header />
             <HotelBayView />

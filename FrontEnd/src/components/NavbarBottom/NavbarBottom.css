@@ -1,7 +1,12 @@
 .navbar-bottom {
     background-color: var(--black-color-transparency);
     overflow: hidden;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: -1px;
+    z-index: 1000; /* Ensure it stays on top */
 }
+
 
 .navbar-sections-bottom {
     width: 90%;

@@ -1,5 +1,14 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./AboutUs.css";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/swiper-bundle.css";
+
+import { Navigation, Pagination } from "swiper/modules";
+
 import about_us_01 from "../../../assets/images/about-us/about_us_01.jpg";
 import about_us_02 from "../../../assets/images/about-us/about_us_02.jpg";
 import bed_icon from "../../../assets/images/about-us/bed_icon.svg";
@@ -7,6 +16,7 @@ import discount_icon from "../../../assets/images/about-us/discount_icon.svg";
 import wifi_icon from "../../../assets/images/about-us/wifi_icon.svg";
 import log_out_icon from "../../../assets/images/about-us/log_out_icon.svg";
 import about_us_03 from "../../../assets/images/about-us/about_us_03.jpg";
+import person_01 from "../../../assets/images/about-us/person_01.png";
 
 const AboutUs = () => {
   return (
@@ -144,31 +154,91 @@ const AboutUs = () => {
       </div>
       {/* ====================== section 4 */}
       <div className="section-05">
-        <div className="section-05-container">
-          <div className="section-05-content">
-            <div className="section-05-content-photo-01">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-            <div className="section-05-content-photo-02">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-            <div className="section-05-content-photo-03">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-            <div className="section-05-content-photo-04">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-            <div className="section-05-content-photo-05">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-            <div className="section-05-content-photo-06">
-              <img src={about_us_03} alt={about_us_03} />
-            </div>
-          </div>
+        <div className="section-05-content-info">
+          <h2>MEMBERSHIP</h2>
+          <h1>CRAFTING UNIQUE EXPERIENCES</h1>
         </div>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+            clickable: true
+          }}
+          // grabCursor={true}
+          modules={[Pagination, Navigation]}
+          className="Swiper"
+          navigation
+          spaceBetween={5}
+          slidesPerView={4}
+        >
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="SwiperSlide">
+            <div className="photo-item">
+              <img src={person_01} alt={person_01} />
+            </div>
+          </SwiperSlide>
+          
+        </Swiper>
       </div>
     </div>
   );
 };
 
 export default AboutUs;
+
+// <div className="photo-wrapper">
+//           <ul className="photo-list">
+//             <li className="photo-item">
+//               <img src={about_us_03} alt={about_us_03} />
+//               <span className="material-symbols-outlined">chevron_right</span>
+//             </li>
+//           </ul>
+//         </div>

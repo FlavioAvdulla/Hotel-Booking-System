@@ -252,6 +252,7 @@
 }
 
 .section-03-content-info p {
+
     /* color: var(--grey-color); */
     font-weight: 300;
 }
@@ -349,9 +350,10 @@
 .icon-04 p {
     text-align: center;
     margin: 30px 0px 0px 0px;
+    font-weight: 300;
 }
 
-/* ========================= section-03 */
+/* ========================= section-04 */
 
 .section-04 {
     display: flex;
@@ -448,44 +450,59 @@
 
 .section-05 {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     margin: 0px auto;
+    /* background-color: rgb(214, 236, 255); */
 }
 
-.section-05-container {
-    margin: 0px auto 100px;
+.SwiperSlide {
+    margin: 10px 0px 0px 0px;
+    /* height: 100%; */
+    /* background-color: rgb(128, 196, 255); */
 }
 
-.section-05-content {
+.Swiper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    margin: 50px auto 100px;
+    /* background-color: aliceblue; */
+    padding: 10px 0px 10px 0px;
+}
+
+.photo-item {
     display: flex;
     width: 100%;
-    height: 400px;
-    margin: 0px auto;
-    background-color: aliceblue;
-    gap: 20px;
-}
-
-.section-05-content-photo-01,
-.section-05-content-photo-02,
-.section-05-content-photo-03,
-.section-05-content-photo-04,
-.section-05-content-photo-05,
-.section-05-content-photo-06 {
-    width: 100%;
+    cursor: grab;
     aspect-ratio: 1 / 1;
-    background-color: antiquewhite;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.097);
 }
 
-.section-05-content-photo-01 img,
-.section-05-content-photo-02 img,
-.section-05-content-photo-03 img,
-.section-05-content-photo-04 img,
-.section-05-content-photo-05 img,
-.section-05-content-photo-06 img {
-    width: 100%;
+.photo-item:active {
+    cursor: grabbing;
+}
+
+.photo-item img {
     height: 100%;
     object-fit: cover;
+    aspect-ratio: 1 / 1;
 }
 
+.section-05-content-info {
+    text-align: center;
+}
 
+.section-05-content-info h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gold-color);
+}
+
+.section-05-content-info h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gold-color);
+}

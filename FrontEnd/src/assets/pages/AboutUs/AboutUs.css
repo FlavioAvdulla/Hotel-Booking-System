@@ -499,6 +499,10 @@
     transition: all 0.5s ease-in-out;
 }
 
+.photo-item-info:hover {
+    cursor:auto;
+}
+
 .photo-item:hover .photo-item-info {
     transform: translateY(-120px);
     backdrop-filter: blur(5px);
@@ -517,7 +521,7 @@
 
 .photo-item-info h1 {
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--dark-grey);
 }
 
@@ -538,7 +542,7 @@
 .fa-square-whatsapp {
     font-size: 20px;
     color: var(--dark-grey);
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .fa-square-facebook:hover,
@@ -547,6 +551,7 @@
 .fa-square-whatsapp:hover {
     rotate: 0deg;
     cursor: pointer;
+    color: rgb(80, 80, 80);
 }
 
 .photo-item:active {

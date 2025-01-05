@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./AboutUs.css";
+import { staff } from "../../pages/AboutUs/AboutUs.js";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +17,6 @@ import discount_icon from "../../../assets/images/about-us/discount_icon.svg";
 import wifi_icon from "../../../assets/images/about-us/wifi_icon.svg";
 import log_out_icon from "../../../assets/images/about-us/log_out_icon.svg";
 import about_us_03 from "../../../assets/images/about-us/about_us_03.jpg";
-import person_01 from "../../../assets/images/about-us/person_01.png";
 
 const AboutUs = () => {
   return (
@@ -161,7 +161,7 @@ const AboutUs = () => {
         <Swiper
           pagination={{
             dynamicBullets: true,
-            clickable: true
+            clickable: true,
           }}
           // grabCursor={true}
           modules={[Pagination, Navigation]}
@@ -170,62 +170,47 @@ const AboutUs = () => {
           spaceBetween={5}
           slidesPerView={4}
         >
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="SwiperSlide">
-            <div className="photo-item">
-              <img src={person_01} alt={person_01} />
-            </div>
-          </SwiperSlide>
-          
+          {staff.map((staff) => (
+            <SwiperSlide key={staff._id} className="SwiperSlide">
+              <div className="photo-item">
+                <img src={staff.image} alt={staff.fullname} />
+                <div className="photo-item-info">
+                  <h1>{staff.fullname}</h1>
+                  <p>{staff.position}</p>
+                  <div className="photo-item-info-icons">
+                    <a
+                      href="https://www.behance.net/flavioavdulla"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a
+                      href="https://www.behance.net/flavioavdulla"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.behance.net/flavioavdulla"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a
+                      href="https://www.behance.net/flavioavdulla"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
@@ -233,12 +218,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
-// <div className="photo-wrapper">
-//           <ul className="photo-list">
-//             <li className="photo-item">
-//               <img src={about_us_03} alt={about_us_03} />
-//               <span className="material-symbols-outlined">chevron_right</span>
-//             </li>
-//           </ul>
-//         </div>

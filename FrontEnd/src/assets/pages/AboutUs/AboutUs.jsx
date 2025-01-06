@@ -448,7 +448,11 @@ const AboutUs = () => {
                     />
                     <FaStar
                       className="star"
-                      color={ratingValue <= rating ? "rgb(255, 230, 0)" : "rgb(105, 105, 105)"}
+                      color={
+                        ratingValue <= rating
+                          ? "rgb(255, 230, 0)"
+                          : "rgb(105, 105, 105)"
+                      }
                       // size={30}
                     />
                   </label>

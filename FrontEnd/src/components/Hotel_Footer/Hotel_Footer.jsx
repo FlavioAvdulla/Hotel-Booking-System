@@ -29,6 +29,7 @@ const Hotel_Footer = () => {
               <input
                 type="text"
                 name="email"
+                row="10"
                 placeholder="Enter your email."
                 required
               />

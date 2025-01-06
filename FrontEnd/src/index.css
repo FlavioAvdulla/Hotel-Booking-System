@@ -19,6 +19,7 @@ body {
 }
 
 a {
+    color: var(--dark-grey);
     text-decoration: none;
     color: inherit;
 }

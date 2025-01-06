@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./AboutUs.css";
-import { staff } from "../../pages/AboutUs/AboutUs.js";
+import { staff } from "../../pages/AboutUs/Staff.js";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +16,9 @@ import bed_icon from "../../../assets/images/about-us/bed_icon.svg";
 import discount_icon from "../../../assets/images/about-us/discount_icon.svg";
 import wifi_icon from "../../../assets/images/about-us/wifi_icon.svg";
 import log_out_icon from "../../../assets/images/about-us/log_out_icon.svg";
+import review_icon from "../../../assets/images/about-us/review_icon.svg";
 import about_us_03 from "../../../assets/images/about-us/about_us_03.jpg";
+import review_01 from "../../../assets/images/about-us/review_01.jpg";
 
 const AboutUs = () => {
   return (
@@ -152,7 +154,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      {/* ====================== section 4 */}
+      {/* ====================== section 5 */}
       <div className="section-05">
         <div className="section-05-content-info">
           <h2>MEMBERSHIP</h2>
@@ -212,6 +214,250 @@ const AboutUs = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      {/* ====================== section 6 */}
+      <div className="section-06">
+        <div className="section-06-content">
+          <div className="section-06-content-info">
+            <h2>MEMBERSHIP</h2>
+            <h1>CRAFTING UNIQUE EXPERIENCES</h1>
+          </div>
+          <div className="section-06-content-reviews">
+            {/* ====================== Column - 01 */}
+            <div className="review-column-01">
+              <div className="review-01">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="review-02">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ====================== Column - 01 */}
+
+            <div className="review-column-02">
+              <div className="review-03">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="review-04">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ====================== Column - 01 */}
+
+            <div className="review-column-03">
+              <div className="review-05">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="review-06">
+                <div className="review-description-section">
+                  <img src={review_icon} alt={review_icon} />
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard...
+                  </p>
+                </div>
+                <div className="review-client">
+                  <div className="client-photo">
+                    <img src={review_01} alt={review_01} />
+                  </div>
+                  <div className="client-info">
+                    <div className="client-info-stars">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <div className="client-info-name">
+                      <h1>Grace Bennett</h1>
+                      <p>Happy Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ====================== Submit Review */}
+          <div className="submit-review">
+            <h1>Add Your Review Below</h1>
+            <div className="submit-review-stars">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+            </div>
+            
+            <div className="submit-review-input">
+            {/* <label>Full Name</label> */}
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter you name"
+              required
+            />
+              <textarea
+                type="text"
+                name="email"
+                placeholder="Write your review."
+                required
+              />
+              <button>SUBMIT</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
 .navbar-bottom {
     background-color: var(--black-color-transparency);
     overflow: hidden;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
+    /* For Safari */
     position: sticky;
     top: -1px;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000;
+    /* Ensure it stays on top */
 }
 
 
@@ -135,19 +137,20 @@
 
     .page-sections li {
         /* display: flex; */
-        margin: 0px 25% 0px 0px;
+        margin: 0px 15% 0px 0px;
         font-size: 0px;
         width: 65px;
+        text-align: left;
         /* background-color: rgb(108, 108, 108); */
     }
 
     .navbar-bottom img {
         margin: 0px 0px 0px 15px;
     }
-    
+
 
     /* Menu icon */
-     .fa-bars {
+    .fa-bars {
         display: flex;
         right: 100px;
         color: white;
@@ -161,55 +164,83 @@
     /* Mobile Menu */
 
     .navbar-menu {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         height: 100%;
         width: 150px;
         background-color: rgba(0, 0, 0, 0.359);
         backdrop-filter: blur(10px);
         justify-content: center;
-        align-items: flex-end;
-        z-index: 2;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
+        align-items: center;
+        /* z-index: 2; */
+        /* transform: translateX(100%); */
+        /* transition: transform 0.3s ease-in-out; */
     }
 
+    .navbar-menu.open {
+        animation: slideIn 1s forwards;
+        transform: translateX(0);
+    }
+
+    .navbar-menu.closed {
+        animation: slideOut 1s forwards;
+        transform: translateX(0);
+    }
 
     /* ====================Slide in and out */
     @keyframes slideIn {
         from {
-          transform: translateX(100%);
+            transform: translateX(-100%);
         }
-      
+
         to {
-          transform: translateX(0);
+            transform: translateX(0);
         }
-      }
+    }
 
     @keyframes slideOut {
         from {
-          transform: translateX(0);
+            transform: translateX(0);
         }
-      
+
         to {
-          transform: translateX(100%);
+            transform: translateX(-100%);
         }
-      }
+    }
 
-      .navbar-menu.open {
-        animation: slideIn 1s forwards;
-        transform: translateX(0);
-      }
+    
+
+    /* IN CASE YOU DONT WANT TO OPEN MENU AUTOMATICALLY
+      SET THE USESTATE FROM TRUE TO FALSE AND WRITE THIS CODE IN CSS
       
-      .navbar-menu.closed {
-        animation: slideOut 1s forwards;
-        transform: translateX(0);
-      }
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.359);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 1s ease-in-out;
+    }
 
-      .page-sections li::after {
+    .navbar-menu.open {
+        transform: translateX(0);
+    }
+
+    .navbar-menu.closed {
+        transform: translateX(-100%);
+    } */
+
+    .page-sections li::after {
         content: "";
         position: absolute;
         bottom: -5px;
@@ -219,7 +250,7 @@
         transition: 0.3s ease-in-out;
         border-radius: 8px 8px 0% 0%;
     }
-    
+
     .page-sections li:hover::after,
     .page-sections li.active::after {
         width: 100%;

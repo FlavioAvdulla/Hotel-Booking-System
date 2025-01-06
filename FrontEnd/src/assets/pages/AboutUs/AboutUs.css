@@ -844,3 +844,20 @@
     color: var(--dark-grey);
     transform: scale(1.05);
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+.submit-review-stars {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.star {
+    cursor: pointer;
+    transition: color 200ms;
+    /* background-color: aqua; */
+    font-size: 40px;
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./AboutUs.css";
 import { staff } from "../../pages/AboutUs/Staff.js";
+import { FaStar } from "react-icons/fa";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,6 +22,8 @@ import about_us_03 from "../../../assets/images/about-us/about_us_03.jpg";
 import review_01 from "../../../assets/images/about-us/review_01.jpg";
 
 const AboutUs = () => {
+  const [rating, setRating] = useState(null);
+
   return (
     <div className="about-us">
       <div className="section-01">
@@ -433,21 +436,34 @@ const AboutUs = () => {
           <div className="submit-review">
             <h1>Add Your Review Below</h1>
             <div className="submit-review-stars">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
+              {[...Array(5)].map((star, i) => {
+                const ratingValue = i + 1;
+                return (
+                  <label key={ratingValue}>
+                    <input
+                      type="radio"
+                      name="rating"
+                      value={ratingValue}
+                      onClick={() => setRating(ratingValue)}
+                    />
+                    <FaStar
+                      className="star"
+                      color={ratingValue <= rating ? "rgb(255, 230, 0)" : "rgb(105, 105, 105)"}
+                      // size={30}
+                    />
+                  </label>
+                );
+              })}
             </div>
-            
+
             <div className="submit-review-input">
-            {/* <label>Full Name</label> */}
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter you name"
-              required
-            />
+              {/* <label>Full Name</label> */}
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter you name"
+                required
+              />
               <textarea
                 type="text"
                 name="email"

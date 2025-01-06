@@ -7,7 +7,7 @@ const NavbarBottom = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("/");
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);

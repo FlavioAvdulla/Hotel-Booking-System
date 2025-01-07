@@ -80,7 +80,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
       {/* ====================== section 3 */}
+      
       <div className="section-03">
         <div className="section-03-container">
           <div className="section-03-content">
@@ -173,7 +175,7 @@ const AboutUs = () => {
           className="Swiper"
           navigation
           spaceBetween={5}
-          slidesPerView={4}
+          slidesPerView={3}
         >
           {staff.map((staff) => (
             <SwiperSlide key={staff._id} className="SwiperSlide">
@@ -450,7 +452,7 @@ const AboutUs = () => {
                       className="star"
                       color={
                         ratingValue <= rating
-                          ? "rgb(255, 230, 0)"
+                          ? "rgb(255, 208, 0)"
                           : "rgb(105, 105, 105)"
                       }
                       // size={30}

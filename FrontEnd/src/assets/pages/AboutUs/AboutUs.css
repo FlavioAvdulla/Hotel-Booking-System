@@ -139,12 +139,14 @@
     display: flex;
     flex-direction: column;
     margin: 0px 0px 10px 0px;
+
 }
 
 .tick-01,
 .tick-02,
 .tick-03 {
     display: flex;
+    align-items: center;
     margin: 0px 0px 10px 0px;
 }
 
@@ -156,6 +158,7 @@
 
 .fa-circle-check {
     color: var(--gold-color);
+    margin: 3px 10px 0px 0px;
 }
 
 .section-02-content-info h1 {
@@ -510,17 +513,6 @@
     opacity: 1;
 }
 
-@keyframes slideInY {
-    0% {
-        transform: translateY(-50%);
-    }
-
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
 .photo-item-info h1 {
     font-size: 22px;
     font-weight: 400;
@@ -776,11 +768,10 @@
 .submit-review-stars .fa-star {
     display: flex;
     font-size: 30px;
-    color: rgb(255, 230, 0);
     margin: 0px auto;
     cursor: pointer;
+    scale: 200%;
     /* background-color: rgb(81, 194, 156); */
-
 }
 
 .submit-review-input {
@@ -860,4 +851,301 @@ input[type="radio"] {
     transition: color 200ms;
     /* background-color: aqua; */
     font-size: 40px;
+}
+
+/*====================== Responsive */
+
+
+@media(max-width: 1000px) {
+
+    .review-01,
+    .review-02,
+    .review-03,
+    .review-04,
+    .review-05,
+    .review-06 {
+        padding: 40px;
+    }
+
+    .review-description-section p {
+        font-size: 20px;
+        text-align: justify;
+        text-align-last: left;
+        margin: 20px 0px 0px 0px;
+        font-weight: 300;
+    }
+
+    .review-client {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 18px;
+        /* background-color: aliceblue; */
+    }
+
+    .client-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .client-info-stars {
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 5px;
+    }
+
+    .client-info-stars .fa-star {
+        font-size: 20px;
+        color: rgb(255, 230, 0);
+        margin: 0px;
+    }
+
+
+    .client-info-name h1 {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .client-info-name p {
+        font-weight: 300;
+        font-size: 17px;
+    }
+
+    .client-photo img {
+        border-radius: 50%;
+        width: 85px;
+        height: auto;
+    }
+}
+
+@media(max-width: 750px) {
+
+    /*==================== section 1 */
+    .banner-info p {
+        width: 80%;
+    }
+
+    /*==================== section 2 */
+
+    .section-02-content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 700px;
+        margin: 0px auto;
+        /* background-color: aliceblue; */
+        /* background-color: rgb(209, 176, 133); */
+        /* gap: 20px; */
+    }
+
+    .section-02-content-photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-02-content-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 70px 40px;
+        gap: 20px;
+        /* background-color: rgb(255, 147, 147); */
+    }
+
+    .section-02-content {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: 0px auto;
+        /* background-color: rgb(209, 176, 133); */
+        /* gap: 20px; */
+    }
+
+    .section-02-content-info h1 {
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--gold-color);
+    }
+
+    /*==================== Section 3 */
+
+
+    .section-03 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        /* background-color: rgb(146, 72, 72); */
+    }
+
+    .section-03-content {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* background-color: antiquewhite; */
+    }
+
+    .section-03-content-info {
+        width: 100%;
+        padding: 100px 40px 40px 40px;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        /* background-color: antiquewhite; */
+    }
+
+    .section-03-content-info h1 {
+        font-size: 30px;
+    }
+
+    .section-03-content-info p {
+        text-align: justify;
+        text-align-last: center;
+        width: 100%;
+    }
+
+    .section-03-content-info button {
+        margin: 10px 0px 40px 0px;
+    }
+
+    .section-03-icons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 100px 0px;
+        /* background-color: rgb(76, 115, 150); */
+    }
+
+    .section-03-icons-content {
+        display: grid;
+        margin: auto;
+        width: 70%;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        /* background-color: aqua; */
+    }
+
+    .icon-01 img,
+    .icon-02 img,
+    .icon-03 img,
+    .icon-04 img {
+        width: 40px;
+    }
+
+    .icon-01 p,
+    .icon-02 p,
+    .icon-03 p,
+    .icon-04 p {
+        text-align: center;
+        margin: 17px 0px 0px 0px;
+        font-weight: 300;
+    }
+
+    .icon-01 {
+        border-radius: 25px 0px 25px 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .icon-02 {
+        border-radius: 0px 25px 0px 25px;
+    }
+
+    .icon-03 {
+        border-radius: 0px 25px 0px 25px;
+    }
+
+    .icon-04 {
+        border-radius: 25px 0px 25px 0px;
+    }
+
+    /* ========================= section-04 */
+
+    .section-04-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section-04-content-info {
+        width: 100%;
+        padding: 40px 40px;
+        gap: 30px;
+    }
+
+    .section-04-content-photo {
+        width: 100%;
+    }
+
+    .section-04-content-info h1 {
+        font-size: 30px;
+    }
+
+    /* ========================= section-05 */
+
+    .photo-item-info {
+        height: 70px;
+    }
+
+    .photo-item-info:hover {
+        cursor: auto;
+    }
+
+
+    .photo-item-info h1 {
+        font-size: 18px;
+    }
+
+    .photo-item-info p {
+        font-size: 12px;
+        margin: 0px 0px 5px 0px;
+    }
+
+
+    .section-05-content-info h1 {
+        margin: 0px auto;
+        width: 70%;
+    }
+
+    /* ========================= section-06 */
+
+    .section-06-content-info {
+        padding: 0px 40px;
+    }
+
+    .section-06-content-info h1 {
+        font-size: 30px;
+        margin: 0px 0px 60px 0px;
+    }
+
+    .section-06-content-reviews {
+        flex-direction: column;
+    }
+
+    .review-column-01,
+    .review-column-02,
+    .review-column-03 {
+        width: 100%;
+    }
+
+    /* ====================== Submit Review */
+
+    .submit-review h1 {
+        font-size: 30px;
+    }
+
+    .submit-review-input input {
+        width: 400px;
+    }
+
+    .submit-review-input textarea {
+        width: 400px;
+    }
+
+    .submit-review-input button {
+        width: 32vw;
+    }
 }

@@ -63,10 +63,15 @@
     gap: 20px;
 }
 
-.fa-brands {
+.connect-with-us-icons .fa-brands {
     font-size: 35px;
     color: var(--gold-color);
     transition: 0.5s ease-in-out;
+}
+
+.connect-with-us-icons .fa-brands:hover {
+    color: var(--gold-color);
+    border: none;
 }
 
 .fa-brands:hover {

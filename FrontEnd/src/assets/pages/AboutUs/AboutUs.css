@@ -449,7 +449,7 @@
     /* Change this to the color you want on hover */
 }
 
-/* ========================= section-05 */
+/*================================= section-05 */
 
 .section-05 {
     display: flex;
@@ -534,7 +534,7 @@
 .fa-square-instagram,
 .fa-square-x-twitter,
 .fa-square-whatsapp {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--dark-grey);
     transition: 0.1s ease-in-out;
 }
@@ -574,7 +574,7 @@
     margin: 0px 0px 10px 0px;
 }
 
-/* ========================= section-06 */
+/*================================= section-06 */
 
 .section-06 {
     display: flex;
@@ -616,6 +616,7 @@
 .section-06-content-reviews {
     display: flex;
     width: 80%;
+    height: 100%;
     margin: 0px auto;
     height: 100%;
     /* background-color: antiquewhite; */
@@ -641,9 +642,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    aspect-ratio: 1 / 1;
     gap: 20px;
     padding: 20px;
     /* background-color: var(--dark-grey); */
@@ -736,7 +736,7 @@
     height: auto;
 }
 
-/* ====================== Submit Review */
+/*================================= Submit Review */
 
 .submit-review {
     display: flex;
@@ -853,10 +853,108 @@ input[type="radio"] {
     font-size: 40px;
 }
 
-/*====================== Responsive */
+@media (min-width: 1200px) and (max-width: 1400px) {
 
+    /*=================================  section 2 */
 
-@media(max-width: 1000px) {
+    .section-02-content-info {
+        padding: 100px 40px;
+    }
+
+    /*================================= section 03 */
+
+    .section-03-icons-content {
+        width: 80%;
+    }
+
+    .section-03-content-info {
+        padding: 180px 70px;
+        /* background-color: aliceblue; */
+    }
+
+    .section-03-content-info h1 {
+        font-size: 40px;
+    }
+
+    /*=================================  section 3 */
+
+    .section-03-content-info {
+        padding: 200px 70px;
+        /* background-color: aliceblue; */
+    }
+
+    .section-03-content-info h1 {
+        font-size: 45px;
+    }
+
+    /*================================= section-05 */
+
+    .photo-item-info {
+        height: 120px;
+    }
+
+    .fa-square-facebook,
+    .fa-square-instagram,
+    .fa-square-x-twitter,
+    .fa-square-whatsapp {
+        font-size: 25px;
+    }
+}
+
+/*======================================================================= */
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+    /*================================= section 2 */
+
+    .section-02-content-info {
+        padding: 100px 40px;
+    }
+
+    /*================================= section 03 */
+
+    .section-03-icons-content {
+        width: 80%;
+    }
+
+    .section-03-content-info {
+        padding: 180px 70px;
+        /* background-color: aliceblue; */
+    }
+
+    .section-03-content-info h1 {
+        font-size: 40px;
+    }
+
+    /*=================================  section 4 */
+
+    .section-04-content {
+        height: 500px;
+    }
+
+    .section-04-content-info h1 {
+        font-size: 40px;
+    }
+
+    /*================================= section-05 */
+
+    .photo-item-info {
+        height: 110px;
+    }
+
+    .fa-square-facebook,
+    .fa-square-instagram,
+    .fa-square-x-twitter,
+    .fa-square-whatsapp {
+        font-size: 25px;
+    }
+
+    /*================================= section 06 */
+
+    .review-description-section p {
+        font-size: 18px;
+        /* background-color: aquamarine; */
+    }
 
     .review-01,
     .review-02,
@@ -867,68 +965,247 @@ input[type="radio"] {
         padding: 40px;
     }
 
-    .review-description-section p {
-        font-size: 20px;
+    .review-client {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .section-06-content-info {
+        padding: 0px 40px;
+    }
+
+    .section-06-content-info h1 {
+        font-size: 30px;
+        margin: 0px 0px 60px 0px;
+    }
+
+    .section-06-content-reviews {
+        flex-direction: column;
+
+    }
+
+    .review-column-01,
+    .review-column-02,
+    .review-column-03 {
+        width: 70%;
+        margin: 0px auto;
+    }
+
+
+}
+
+/*======================================================================= */
+
+@media (min-width: 800px) and (max-width: 1000px) {
+
+    /*=================================  section 2 */
+
+    .section-02-content {
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .section-02-content-photo {
+        width: 100%;
+    }
+
+    .section-02-content-info {
+
+        width: 100%;
+        padding: 70px 40px;
+        gap: 20px;
+        /* background-color: rgb(255, 147, 147); */
+    }
+
+    .section-02-content {
+        height: 100%;
+    }
+
+    .section-02-content-info h1 {
+        font-size: 40px;
+    }
+
+    /*================================= section 3 */
+
+    .section-03-content {
+        flex-direction: column;
+        height: 100%;
+        /* background-color: antiquewhite; */
+    }
+
+    .section-03-content-info {
+        width: 100%;
+        padding: 100px 40px 40px 40px;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        /* background-color: antiquewhite; */
+    }
+
+    .section-03-content-info h1 {
+        font-size: 30px;
+    }
+
+    .section-03-content-info p {
         text-align: justify;
-        text-align-last: left;
-        margin: 20px 0px 0px 0px;
-        font-weight: 300;
+        text-align-last: center;
+        width: 80%;
+    }
+
+    .section-03-content-info button {
+        margin: 10px 0px 40px 0px;
+    }
+
+    .section-03-icons {
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 100px 0px;
+        /* background-color: rgb(76, 115, 150); */
+    }
+
+    .icon-01 img,
+    .icon-02 img,
+    .icon-03 img,
+    .icon-04 img {
+        width: 70px;
+    }
+
+    .icon-01 p,
+    .icon-02 p,
+    .icon-03 p,
+    .icon-04 p {
+        margin: 25px 0px 0px 0px;
+    }
+
+    .icon-02 {
+        border-radius: 0px 25px 0px 25px;
+    }
+
+    .icon-03 {
+        border-radius: 0px 25px 0px 25px;
+    }
+
+    .icon-04 {
+        border-radius: 25px 0px 25px 0px;
+    }
+
+    /*================================= section 4 */
+
+    .section-04-content {
+        height: 500px;
+        
+    }
+
+    .section-04-content-info h1 {
+        font-size: 40px;
+    }
+
+    /*================================= section-05 */
+
+    .photo-item-info {
+        height: 110px;
+
+    }
+
+    /*================================= section 6 */
+
+    .review-description-section p {
+        font-size: 18px;
+        /* background-color: aquamarine; */
+    }
+
+    .review-01,
+    .review-02,
+    .review-03,
+    .review-04,
+    .review-05,
+    .review-06 {
+        padding: 40px;
     }
 
     .review-client {
-        display: flex;
-        width: 100%;
-        height: auto;
-        gap: 18px;
-        /* background-color: aliceblue; */
+        margin: 10px 0px 0px 0px;
     }
 
-    .client-info {
-        display: flex;
+    .section-06-content-info {
+        padding: 0px 40px;
+    }
+
+    .section-06-content-info h1 {
+        font-size: 30px;
+        margin: 0px 0px 60px 0px;
+    }
+
+    .section-06-content-reviews {
         flex-direction: column;
-        justify-content: center;
-        gap: 8px;
+
     }
 
-    .client-info-stars {
-        display: flex;
-        width: 100%;
-        height: auto;
-        gap: 5px;
-    }
-
-    .client-info-stars .fa-star {
-        font-size: 20px;
-        color: rgb(255, 230, 0);
-        margin: 0px;
-    }
-
-
-    .client-info-name h1 {
-        font-weight: 400;
-        font-size: 20px;
-    }
-
-    .client-info-name p {
-        font-weight: 300;
-        font-size: 17px;
-    }
-
-    .client-photo img {
-        border-radius: 50%;
-        width: 85px;
-        height: auto;
+    .review-column-01,
+    .review-column-02,
+    .review-column-03 {
+        width: 80%;
+        margin: 0px auto;
     }
 }
 
+/*======================================================================= */
+
+@media (min-width: 650px) and (max-width: 800px) {
+
+    /*================================= section-05 */
+
+    .photo-item-info {
+        height: 110px;
+    }
+
+    /*================================= section 6 */
+
+    .review-description-section p {
+        font-size: 18px;
+    }
+
+    .review-01,
+    .review-02,
+    .review-03,
+    .review-04,
+    .review-05,
+    .review-06 {
+        padding: 40px;
+    }
+
+    .section-06-content-info {
+        padding: 0px 40px;
+    }
+
+    .section-06-content-info h1 {
+        font-size: 30px;
+        margin: 0px 0px 60px 0px;
+    }
+
+    .section-06-content-reviews {
+        flex-direction: column;
+
+    }
+
+    .review-column-01,
+    .review-column-02,
+    .review-column-03 {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+}
+
+/*======================================================================= */
+
 @media(max-width: 750px) {
 
-    /*==================== section 1 */
+    /*================================= section 1 */
     .banner-info p {
         width: 80%;
     }
 
-    /*==================== section 2 */
+    /*================================= section 2 */
 
     .section-02-content {
         display: flex;
@@ -970,8 +1247,7 @@ input[type="radio"] {
         color: var(--gold-color);
     }
 
-    /*==================== Section 3 */
-
+    /*================================= Section 3 */
 
     .section-03 {
         display: flex;
@@ -1063,7 +1339,7 @@ input[type="radio"] {
         border-radius: 25px 0px 25px 0px;
     }
 
-    /* ========================= section-04 */
+    /*================================= section-04 */
 
     .section-04-content {
         flex-direction: column;
@@ -1084,10 +1360,10 @@ input[type="radio"] {
         font-size: 30px;
     }
 
-    /* ========================= section-05 */
+    /*================================= section-05 */
 
     .photo-item-info {
-        height: 70px;
+        height: 80px;
     }
 
     .photo-item-info:hover {
@@ -1110,7 +1386,14 @@ input[type="radio"] {
         width: 70%;
     }
 
-    /* ========================= section-06 */
+    .fa-square-facebook,
+    .fa-square-instagram,
+    .fa-square-x-twitter,
+    .fa-square-whatsapp {
+        font-size: 20px;
+    }
+
+    /*================================= section-06 */
 
     .section-06-content-info {
         padding: 0px 40px;
@@ -1131,7 +1414,7 @@ input[type="radio"] {
         width: 100%;
     }
 
-    /* ====================== Submit Review */
+    /*================================= Submit Review */
 
     .submit-review h1 {
         font-size: 30px;

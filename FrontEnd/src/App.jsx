@@ -11,8 +11,9 @@ import Restaurant from "./components/Home/Restaurant/Restaurant";
 import HotelVideo from "./components/Home/HotelVideo/HotelVideo";
 import HotelNews from "./components/Home/HotelNews/HotelNews";
 import Hotel_Footer from "./components/Hotel_Footer/Hotel_Footer";
-import Rooms from "./assets/pages/Rooms/Rooms";
-import AboutUs from "./assets/pages/AboutUs/AboutUs.jsx";
+import Rooms from "./components/Pages/Rooms/Rooms";
+import AboutUs from "./components/Pages/AboutUs/AboutUs.jsx";
+import Contacts from "./components/Pages/Contacts/Contacts.jsx";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Routes>
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/" element={<>
             <Header />
             <HotelBayView />

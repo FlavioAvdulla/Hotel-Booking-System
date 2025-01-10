@@ -26,8 +26,8 @@ const NavbarBottom = () => {
       setActiveSection("Pages");
     } else if (path.includes("/news")) {
       setActiveSection("News");
-    } else if (path.includes("/contact")) {
-      setActiveSection("Contact");
+    } else if (path.includes("/contacts")) {
+      setActiveSection("Contacts");
     }
   }, [location]);
 
@@ -123,11 +123,11 @@ const NavbarBottom = () => {
             <li
               className={activeSection === "Contact" ? "active" : ""}
               onClick={() => {
-                setActiveSection("Contact");
+                setActiveSection("Contacts");
                 setMobileMenu(false);
               }}
             >
-              <Link to="/contact">Contact</Link>
+              <Link to="/contacts">Contacts</Link>
             </li>
           </ul>
         </div>

@@ -42,6 +42,10 @@
     cursor: pointer;
 }
 
+.languages p:active {
+    color: var(--gold-color);
+}
+
 .navbar-right {
     display: flex;
     align-items: center;
@@ -72,6 +76,7 @@
     padding: 15px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .login-info {
@@ -89,7 +94,6 @@
 .fa-user {
     font-size: 30px;
     padding: 2px 15px 0px 0px;
-    cursor: pointer;
 }
 
 @media (max-width:1200px) {

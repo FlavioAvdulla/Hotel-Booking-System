@@ -990,6 +990,9 @@ input[type="radio"] {
         margin: 0px auto;
     }
 
+    .submit-review-input button {
+        width: 20vw;
+    }
 
 }
 
@@ -1145,6 +1148,12 @@ input[type="radio"] {
     .review-column-03 {
         width: 80%;
         margin: 0px auto;
+    }
+
+     /*================================= Submit Review */
+
+    .submit-review-input button {
+        width: 20vw;
     }
 }
 

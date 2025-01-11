@@ -60,11 +60,11 @@ const Contacts = () => {
 
       {/* ====================== section 2 */}
       <div className="section-02">
-        <div className="contact-form">
+        <div className="contact-container">
           <div className="input-form">
             <form onSubmit={onSubmit}>
               <div className="input-form-wrapper">
-                <div className="contacts-01">
+                <div className="inputs">
                   <input
                     type="text"
                     name="Firstname"
@@ -90,7 +90,7 @@ const Contacts = () => {
                     required
                   />
                 </div>
-                <div className="contacts-02">
+                <div className="message-textarea">
                   <textarea
                     name="message"
                     placeholder="Enter you message"

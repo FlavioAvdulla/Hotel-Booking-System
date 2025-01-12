@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarTop from "./components/NavbarTop/NavbarTop";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -14,31 +14,38 @@ import Hotel_Footer from "./components/Hotel_Footer/Hotel_Footer";
 import Rooms from "./components/Pages/Rooms/Rooms";
 import AboutUs from "./components/Pages/AboutUs/AboutUs.jsx";
 import Contacts from "./components/Pages/Contacts/Contacts.jsx";
+import Login from "./components/Pages/Login/Login.jsx";
 
 const App = () => {
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
-    <div className="app">
-      <Router>
-        <NavbarTop />
-        <NavbarBottom />
-        <Routes>
-          <Route path="/rooms" element={<Rooms />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/" element={<>
-            <Header />
-            <HotelBayView />
-            <BestRooms />
-            <HotelLocation />
-            <Restaurant />
-            <HotelVideo />
-            <HotelNews />
-            
-          </>} />
-        </Routes>
-        <Hotel_Footer />
-      </Router>
-    </div>
+    <>
+      {showLogin && <Login setShowLogin={setShowLogin} />}
+      <div className="app">
+        <Router>
+          <NavbarTop setShowLogin={setShowLogin} />
+          <NavbarBottom />
+          <Routes>
+            <Route path="/rooms" element={<Rooms />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/" element={
+              <>
+                <Header />
+                <HotelBayView />
+                <BestRooms />
+                <HotelLocation />
+                <Restaurant />
+                <HotelVideo />
+                <HotelNews />
+              </>
+            } />
+          </Routes>
+          <Hotel_Footer />
+        </Router>
+      </div>
+    </>
   );
 };
 

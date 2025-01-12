@@ -67,7 +67,8 @@
     cursor: pointer;
 }
 
-.login {
+.login-active,
+.login-default {
     display: flex;
     background-color: var(--gold-color);
     width: 250px;

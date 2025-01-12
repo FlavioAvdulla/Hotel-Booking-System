@@ -1,0 +1,115 @@
+.login {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: #000000be;
+    /* display: g; */
+}
+
+.login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.login-title h1 {
+    font-size: 25px;
+    font-weight: 400;
+    /* margin: 0px 0px 30px 0px; */
+}
+
+.close-icon {
+    font-size: 28px;
+    margin: 6px 0px 0px 0px;
+    color: red;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.close-icon:hover {
+    rotate: 360deg;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 30px;
+    /* align-items: center; */
+    width: 350px;
+    height: auto;
+    gap: 30px;
+    background-color: white;
+}
+
+.login-container input {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid var(--light-grey);
+    background-color: var(--light-grey);
+    outline: none;
+    resize: vertical;
+    scrollbar-width: none;
+    color: var(--dark-grey);
+}
+
+.login-container h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.email h2,
+.password h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+.login-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold-color);
+    width: 100%;
+    font-weight: 300;
+    background-color: var(--gold-color);
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0px 0px 10px 0px;
+    gap: 20px;
+}
+
+.login-button button:hover {
+    scale: 105%;
+}
+
+.login-button p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.sign-up-button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gold-color);
+    width: 100%;
+    font-weight: 300;
+    background-color: transparent;
+    padding: 15px;
+    color: var(--dark-grey);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 0px 0px 10px 0px;
+    gap: 20px;
+}
+
+.sign-up-button button:hover {
+    scale: 105%;
+}

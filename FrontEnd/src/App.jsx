@@ -23,8 +23,8 @@ const App = () => {
 
   return (
     <>
-      {showLogin && <Login setShowLogin={setShowLogin} setShowSignup={setShowSignup} />}
-      {showSignup && <Signup setShowSignup={setShowSignup} setShowLogin={setShowLogin} />}
+      {showLogin && <Login path="/login" setShowLogin={setShowLogin} setShowSignup={setShowSignup} />}
+      {showSignup && <Signup path="/signup" setShowSignup={setShowSignup} setShowLogin={setShowLogin} />}
       <div className="app">
         <Router>
           <NavbarTop setShowLogin={setShowLogin} />

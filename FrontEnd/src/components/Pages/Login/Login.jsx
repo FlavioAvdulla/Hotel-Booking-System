@@ -14,7 +14,7 @@ const Login = ({ setShowLogin, setShowSignup }) => {
 
   return (
     <div className="login">
-      <div className="login-container">
+      <form className="login-container">
         <div className="login-title">
           <h1>Login</h1>
           <i onClick={handleClose}>
@@ -41,7 +41,7 @@ const Login = ({ setShowLogin, setShowSignup }) => {
         <div className="sign-up-button">
           <button onClick={handleSignupOpen}>SIGN UP</button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

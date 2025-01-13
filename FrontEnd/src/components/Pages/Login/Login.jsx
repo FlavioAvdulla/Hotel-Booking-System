@@ -2,9 +2,14 @@ import React from "react";
 import "./Login.css";
 import { IoIosCloseCircle } from "react-icons/io";
 
-const Login = ({ setShowLogin }) => {
+const Login = ({ setShowLogin, setShowSignup }) => {
   const handleClose = () => {
     setShowLogin(false); // Close the login page
+  };
+
+  const handleSignupOpen = () => {
+    setShowLogin(false); // Close the login page
+    setShowSignup(true); // Open the signup page
   };
 
   return (
@@ -34,7 +39,7 @@ const Login = ({ setShowLogin }) => {
           <p>Already have an account</p>
         </div>
         <div className="sign-up-button">
-          <button>SIGN UP</button>
+          <button onClick={handleSignupOpen}>SIGN UP</button>
         </div>
       </div>
     </div>

@@ -43,7 +43,9 @@ The Hotel Booking System allows users to browse and book rooms, view hotel infor
 ## Technologies
 ### Frontend
 - React.js
-- CSS (with FontAwesome for icons)
+- Html
+- CSS
+- JavaScript
 - React Router
 
 ### Backend

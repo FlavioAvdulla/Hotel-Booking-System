@@ -20,7 +20,7 @@ Welcome to the Hotel Booking System, a comprehensive platform designed to offer 
 The Hotel Booking System allows users to browse and book rooms, view hotel information, manage bookings, and more. It features a user-friendly interface and a robust backend to handle all necessary operations securely.
 
 ## Screenshots
-[Hotel_Website_Screenshot (1)](https://github.com/user-attachments/assets/ed467e1d-39b7-4c78-b9ac-45ad72f0a28c)
+![Hotel_Website_Screenshot (1)](https://github.com/user-attachments/assets/ed467e1d-39b7-4c78-b9ac-45ad72f0a28c)
 ![Hotel_Website_Screenshot (3)](https://github.com/user-attachments/assets/de771312-1513-40bd-b074-297eca3e5182)
 ![Hotel_Website_Screenshot (2)](https://github.com/user-attachments/assets/6d5f1327-18b8-43ed-aa0e-7cbea12d6f66)
 ![Hotel_Website_Screenshot (4)](https://github.com/user-attachments/assets/528da01e-5f77-4b59-b5da-a686e8ee47b6)

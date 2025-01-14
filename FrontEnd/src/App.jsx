@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavbarTop from "./components/NavbarTop/NavbarTop";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -16,18 +16,45 @@ import AboutUs from "./components/Pages/AboutUs/AboutUs";
 import Contacts from "./components/Pages/Contacts/Contacts";
 import Login from "./components/Pages/Login/Login";
 import Signup from "./components/Pages/Signup/Signup";
+import Logout from "./components/Pages/Logout/Logout";
+import axios from 'axios';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
+  const [showLogout, setShowLogout] = useState(false);
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    // Check token validity on component mount
+    const token = localStorage.getItem('token');
+    if (token) {
+      axios.post('http://localhost:3001/verify-token', { token })
+        .then(result => {
+          setUserName(result.data.name);
+        })
+        .catch(err => {
+          console.error(err);
+          localStorage.removeItem('token');
+        });
+    }
+  }, []);
+
+  const handleLogout = () => {
+    setUserName('');
+    localStorage.removeItem('token'); // Remove token on logout
+    setShowLogout(false);
+  };
 
   return (
     <>
-      {showLogin && <Login path="/login" setShowLogin={setShowLogin} setShowSignup={setShowSignup} />}
-      {showSignup && <Signup path="/signup" setShowSignup={setShowSignup} setShowLogin={setShowLogin} />}
+      {showLogin && <Login setShowLogin={setShowLogin} setShowSignup={setShowSignup} setUserName={setUserName} />}
+      {showSignup && <Signup setShowSignup={setShowSignup} setShowLogin={setShowLogin} />}
+      {showLogout && <Logout setShowLogout={setShowLogout} userName={userName} handleLogout={handleLogout}/>}
+
       <div className="app">
         <Router>
-          <NavbarTop setShowLogin={setShowLogin} />
+          <NavbarTop setShowLogin={setShowLogin} userName={userName} setShowLogout={setShowLogout} setUserName={setUserName} />
           <NavbarBottom />
           <Routes>
             <Route path="/rooms" element={<Rooms />} />

@@ -17,7 +17,7 @@ const Signup = ({ setShowSignup, setShowLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/signup', {name, email, password})
+    axios.post('http://localhost:3001/signup', { name, email, password })
       .then(result => {
         console.log(result);
         setSuccessMessage("Successfully registered.");
@@ -29,12 +29,12 @@ const Signup = ({ setShowSignup, setShowLogin }) => {
   };
 
   const handleClose = () => {
-    setShowSignup(false); // Close the signup page
+    setShowSignup(false);
   };
 
   const handleLoginOpen = () => {
-    setShowSignup(false); // Close the signup page
-    setShowLogin(true); // Open the login page
+    setShowSignup(false);
+    setShowLogin(true);
   };
 
   return (

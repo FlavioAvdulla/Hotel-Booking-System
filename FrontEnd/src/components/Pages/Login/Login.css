@@ -92,7 +92,7 @@
 .login-button p {
     font-size: 15px;
     font-weight: 400;
-    color: var(--grey-color);
+    color: red;
 }
 
 .sign-up-button button {

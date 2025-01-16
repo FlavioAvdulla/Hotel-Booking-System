@@ -1,33 +1,34 @@
 import React, { useState, useEffect } from "react";
 import "./Signup.css";
 import { IoIosCloseCircle } from "react-icons/io";
-import axios from 'axios';
+import axios from "axios";
 
 const Signup = ({ setShowSignup, setShowLogin }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [ErrorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    setName('');
-    setEmail('');
-    setPassword('');
+    setName("");
+    setEmail("");
+    setPassword("");
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/signup', { name, email, password })
-      .then(result => {
+    axios
+      .post("http://localhost:3001/signup", { name, email, password })
+      .then((result) => {
         console.log(result);
         setSuccessMessage("Successfully registered.");
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
-        setSuccessMessage("");
+        setErrorMessage("Email already in use.");
       });
   };
-
   const handleClose = () => {
     setShowSignup(false);
   };
@@ -81,10 +82,13 @@ const Signup = ({ setShowSignup, setShowLogin }) => {
         </div>
         <div className="signup-button">
           <button>SIGN UP</button>
-          <p>{successMessage}</p>
+          <p className="success-message">{successMessage}</p>
+          <p className="error-message">{ErrorMessage}</p>
         </div>
         <div className="login-button">
-          <button type="button" onClick={handleLoginOpen}>LOG IN</button>
+          <button type="button" onClick={handleLoginOpen}>
+            LOG IN
+          </button>
         </div>
       </form>
     </div>

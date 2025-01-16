@@ -41,8 +41,8 @@ const App = () => {
   }, []);
 
   const handleLogout = () => {
+    localStorage.removeItem('token');
     setUserName('');
-    localStorage.removeItem('token'); // Remove token on logout
     setShowLogout(false);
   };
 
@@ -50,7 +50,7 @@ const App = () => {
     <>
       {showLogin && <Login setShowLogin={setShowLogin} setShowSignup={setShowSignup} setUserName={setUserName} />}
       {showSignup && <Signup setShowSignup={setShowSignup} setShowLogin={setShowLogin} />}
-      {showLogout && <Logout setShowLogout={setShowLogout} userName={userName} handleLogout={handleLogout}/>}
+      {showLogout && <Logout setShowLogout={setShowLogout} userName={userName} handleLogout={handleLogout} />}
 
       <div className="app">
         <Router>

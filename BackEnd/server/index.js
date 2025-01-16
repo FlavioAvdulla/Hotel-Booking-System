@@ -19,6 +19,13 @@ mongoose.connect(process.env.MONGO_URI)
 // When a user signs up, their password is hashed using bcrypt and stored in the database.
 app.post("/signup", async (req, res) => {
   try {
+    // Check if the email already exists.
+    const existingEmployee = await EmployeeModel.findOne({ email: req.body.email })
+    if (existingEmployee) {
+      return res.status(400).json({ message: "Email already in use." })
+    }
+
+    // Hashed password.
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     const employee = new EmployeeModel({
       name: req.body.name,

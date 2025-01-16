@@ -32,8 +32,6 @@ const NavbarTop = ({ setShowLogin, userName, setShowLogout, setUserName }) => {
   const handleLogoutClick = () => {
     setActiveSection("/logout");
     setShowLogout(true);
-    localStorage.removeItem('token');
-    setUserName(null); // Clear user name on logout
   };
 
   return (

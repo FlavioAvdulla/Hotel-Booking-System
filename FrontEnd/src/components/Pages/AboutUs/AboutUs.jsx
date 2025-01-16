@@ -11,6 +11,9 @@ import "swiper/swiper-bundle.css";
 
 import { Navigation, Pagination } from "swiper/modules";
 
+// import  texts  from "../../pages/AboutUs/texts.json"
+
+// Images
 import about_us_01 from "../../../assets/images/about-us/about_us_01.jpg";
 import about_us_02 from "../../../assets/images/about-us/about_us_02.jpg";
 import bed_icon from "../../../assets/images/about-us/bed_icon.svg";

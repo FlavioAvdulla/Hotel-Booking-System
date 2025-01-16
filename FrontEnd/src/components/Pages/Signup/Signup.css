@@ -92,10 +92,16 @@
     scale: 105%;
 }
 
-.signup-button p {
+.success-message {
     font-size: 15px;
     font-weight: 400;
-    color: var(--grey-color);
+    color: rgb(0, 197, 0);
+}
+
+.error-message {
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
 }
 
 .signup-button button {

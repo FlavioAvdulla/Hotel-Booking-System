@@ -1,3 +1,4 @@
+// Import staff images
 import Emma_Johnson from "../../../assets/images/about-us/Emma_Johnson.jpg";
 import Olivia_Martinez from "../../../assets/images/about-us/Olivia_Martinez.jpg";
 import Liam_Davis from "../../../assets/images/about-us/Liam_Davis.jpg";
@@ -9,13 +10,13 @@ import Sophia_Lee from "../../../assets/images/about-us/Sophia_Lee.jpg";
 import Isabella_Wilson from "../../../assets/images/about-us/Isabella_Wilson.jpg";
 import Benjamin_Anderson from "../../../assets/images/about-us/Benjamin_Anderson.jpg";
 
-
+// Export an array of staff objects
 export const staff = [
     {
         _id: "1",
-        image: Liam_Davis,
-        fullname: "Liam Davis",
-        position: "Concierge"
+        image: Liam_Davis, // Image of the staff member
+        fullname: "Liam Davis", // Full name of the staff member
+        position: "Concierge" // Position of the staff member
     },
     {
         _id: "2",

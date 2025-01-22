@@ -34,8 +34,8 @@ const AboutUs = () => {
           <h1>ABOUT US</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&lsquo;s standard dummy text
-            ever since the 1500s.
+            industry. Lorem Ipsum has been the industry&lsquo;s standard dummy
+            text ever since the 1500s.
           </p>
           <button>
             HOME <i className="fa-solid fa-arrow-right"></i> ABOUT
@@ -59,8 +59,8 @@ const AboutUs = () => {
               <h1>CRAFTING UNIQUE EXPERIENCES</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <div className="ticks">
                 <div className="tick-01">
@@ -85,7 +85,7 @@ const AboutUs = () => {
       </div>
 
       {/* ====================== section 3 */}
-      
+
       <div className="section-03">
         <div className="section-03-container">
           <div className="section-03-content">

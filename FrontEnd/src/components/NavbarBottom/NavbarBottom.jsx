@@ -4,16 +4,19 @@ import "./NavbarBottom.css";
 import Hotel_Bookin_Logo_White from "../../assets/images/Hotel_Bookin_Logo_White.svg";
 
 const NavbarBottom = () => {
+  // State variables to manage active section and mobile menu status
   const location = useLocation();
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState("/");
   const [mobileMenu, setMobileMenu] = useState(true);
   const menuRef = useRef(null);
 
+  // Function to toggle the mobile menu
   const toggleMenu = () => {
     setMobileMenu((prevMenu) => !prevMenu);
   };
 
+  // useEffect hook to update active section based on current URL path
   useEffect(() => {
     const path = location.pathname;
     if (path === "/") {
@@ -31,12 +34,14 @@ const NavbarBottom = () => {
     }
   }, [location]);
 
+  // Function to handle logo click, navigates to home and closes mobile menu
   const handleLogoClick = () => {
     navigate("/");
     setActiveSection("Home");
     setMobileMenu(false); // Ensure menu closes when navigating to Home
   };
 
+  // useEffect hook to handle window resize and clicks outside the menu
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 750 && mobileMenu) {
@@ -53,6 +58,7 @@ const NavbarBottom = () => {
     window.addEventListener("resize", handleResize);
     document.addEventListener("mousedown", handleClickOutside);
 
+    // Cleanup event listeners on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
       document.removeEventListener("mousedown", handleClickOutside);

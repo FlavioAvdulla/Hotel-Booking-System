@@ -1,34 +1,43 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 import "./NavbarTop.css";
 
+// NavbarTop component definition
 const NavbarTop = ({ setShowLogin, userName, setShowLogout, setUserName }) => {
+  // Hook to get the current location (URL) of the app
   const location = useLocation();
+  // State to track the active section of the navbar
   const [activeSection, setActiveSection] = useState("/login");
 
   useEffect(() => {
+    // Update active section based on the current URL path
     setActiveSection(location.pathname);
 
     // Check token validity on component mount
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     if (token) {
-      axios.post('http://localhost:3001/verify-token', { token })
-        .then(result => {
+      axios
+        .post("http://localhost:3001/verify-token", { token })
+        .then((result) => {
+          // If token is valid, set the userName state
           setUserName(result.data.name);
         })
-        .catch(err => {
+        .catch((err) => {
           console.error(err);
-          localStorage.removeItem('token');
+          // If token is invalid or there's an error, remove the token from local storage
+          localStorage.removeItem("token");
         });
     }
   }, [location, setUserName]);
 
+  // Handle login button click
   const handleLoginClick = () => {
     setActiveSection("/login");
     setShowLogin(true);
   };
 
+  // Handle logout button click
   const handleLogoutClick = () => {
     setActiveSection("/logout");
     setShowLogout(true);
@@ -64,7 +73,9 @@ const NavbarTop = ({ setShowLogin, userName, setShowLogout, setUserName }) => {
           <div
             className={`login-default ${userName ? "login-active" : ""}`}
             onClick={userName ? handleLogoutClick : handleLoginClick}
-            aria-label={userName ? "Log out of your account" : "Log in to your account"}
+            aria-label={
+              userName ? "Log out of your account" : "Log in to your account"
+            }
           >
             <i className="fa-solid fa-user"></i>
             <div className="login-info">

@@ -1,21 +1,25 @@
-import React, { useState, useEffect } from "react";
-import "./Signup.css";
-import { IoIosCloseCircle } from "react-icons/io";
-import axios from "axios";
+import React, { useState, useEffect } from "react"; // Import React and hooks
+import "./Signup.css"; // Import CSS file for styling
+import { IoIosCloseCircle } from "react-icons/io"; // Import Close icon from react-icons library
+import axios from "axios"; // Import axios for HTTP requests
 
+// Signup component definition
 const Signup = ({ setShowSignup, setShowLogin }) => {
+  // State variables for form inputs and messages
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const [ErrorMessage, setErrorMessage] = useState("");
 
+  // Effect hook to reset form inputs when the component mounts
   useEffect(() => {
     setName("");
     setEmail("");
     setPassword("");
   }, []);
 
+  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
@@ -29,10 +33,13 @@ const Signup = ({ setShowSignup, setShowLogin }) => {
         setErrorMessage("Email already in use.");
       });
   };
+
+  // Function to close the signup modal
   const handleClose = () => {
     setShowSignup(false);
   };
 
+  // Function to open the login modal
   const handleLoginOpen = () => {
     setShowSignup(false);
     setShowLogin(true);

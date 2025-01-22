@@ -14,15 +14,18 @@ import { MdAddIcCall } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
 
 const Contacts = () => {
+  // State to manage form submission result
   const [result, setResult] = React.useState("");
 
+  // Function to handle form submission
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending...."); // Display sending message
     const formData = new FormData(event.target);
 
     formData.append("access_key", "6051b6b5-751e-4800-8de9-89c9c0bb27e9");
 
+    // Send form data to the API endpoint
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
@@ -30,9 +33,10 @@ const Contacts = () => {
 
     const data = await response.json();
 
+    // Check response status and update result
     if (data.success) {
       setResult("Form Submitted Successfully");
-      event.target.reset();
+      event.target.reset(); // Reset the form after successful submission
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -41,22 +45,22 @@ const Contacts = () => {
 
   return (
     <div className="contacts">
-          <div className="section-01">
-            <div className="banner-info">
-              <h1>CONTACT US</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s.
-              </p>
-              <button>
-                HOME <i className="fa-solid fa-arrow-right"></i> CONTACTS
-              </button>
-            </div>
-            <div className="banner-photo">
-              <img src={about_us_01} alt={about_us_01} />
-            </div>
-          </div>
+      <div className="section-01">
+        <div className="banner-info">
+          <h1>CONTACT US</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+          <button>
+            HOME <i className="fa-solid fa-arrow-right"></i> CONTACTS
+          </button>
+        </div>
+        <div className="banner-photo">
+          <img src={about_us_01} alt={about_us_01} />
+        </div>
+      </div>
 
       {/* ====================== section 2 */}
       <div className="section-02">
@@ -78,7 +82,7 @@ const Contacts = () => {
                     required
                   />
                   <input
-                    type="text"
+                    type="email"
                     name="Email"
                     placeholder="Email"
                     required
@@ -100,9 +104,7 @@ const Contacts = () => {
                 <button type="submit">SUBMIT NOW</button>
                 <span>{result}</span>
               </div>
-              
             </form>
-            
           </div>
           {/* =============================================================== */}
           <div className="contact-info">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import Header_02 from "../../../assets/images/header_02.jpg";
 
+// Array of month abbreviations
 const months = [
   "JAN",
   "FEB",
@@ -18,17 +19,19 @@ const months = [
 ];
 
 const Header = () => {
-  // Separate states for check-in and check-out month indexes
+  // State variables for check-in month, check-out month, and number of guests
   const [checkInMonthIndex, setCheckInMonthIndex] = useState(0);
   const [checkOutMonthIndex, setCheckOutMonthIndex] = useState(1);
   const [guestNum, setGuestNum] = useState(1);
 
+  // Function to validate check-in date input
   const validateDateInputCheckIn = (event) => {
     const input = event.target;
     const value = input.value;
     const numericValue = value.replace(/[^0-9]/g, "");
     const dateValue = parseInt(numericValue, 10);
 
+    // Check if date is valid (1-31)
     if (!isNaN(dateValue) && dateValue >= 1 && dateValue <= 31) {
       input.value = dateValue;
     } else {
@@ -36,12 +39,14 @@ const Header = () => {
     }
   };
 
+  // Function to validate number of guests input
   const validateDateInputCheckOut = (event) => {
     const input = event.target;
     const value = input.value;
     const numericValue = value.replace(/[^0-9]/g, "");
     const dateValue = parseInt(numericValue, 10);
 
+    // Check if number of guests is valid (1-6)
     if (!isNaN(dateValue) && dateValue >= 1 && dateValue <= 31) {
       input.value = dateValue;
     } else {
@@ -64,6 +69,7 @@ const Header = () => {
     }
   };
 
+  // Function to change the check-in month
   const changeMonthCheckIn = (direction) => {
     setCheckInMonthIndex((prevIndex) => {
       if (direction === "up") {
@@ -74,6 +80,7 @@ const Header = () => {
     });
   };
 
+  // Function to change the check-out month
   const changeMonthCheckOut = (direction) => {
     setCheckOutMonthIndex((prevIndex) => {
       if (direction === "up") {
@@ -84,6 +91,7 @@ const Header = () => {
     });
   };
 
+  // Function to change the number of guests
   const changeGuestNum = (direction) => {
     setGuestNum((prevNum) => {
       if (direction === "up") {
@@ -177,7 +185,9 @@ const Header = () => {
                 type="text"
                 onInput={validateDateInputGuests}
                 placeholder="01"
-                value={guestNum === 0 ? "" : guestNum.toString().padStart(2, "0")}
+                value={
+                  guestNum === 0 ? "" : guestNum.toString().padStart(2, "0")
+                }
               />
             </div>
 

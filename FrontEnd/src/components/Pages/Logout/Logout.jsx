@@ -1,8 +1,10 @@
-import React from "react";
-import "./Logout.css";
-import { IoIosCloseCircle } from "react-icons/io";
+import React from "react"; // Import React library
+import "./Logout.css"; // Import CSS file for styling
+import { IoIosCloseCircle } from "react-icons/io"; // Import Close icon from react-icons library
 
+// Logout component definition
 const Logout = ({ setShowLogout, userName, handleLogout }) => {
+  // Function to handle the closing of the logout modal
   const handleClose = () => {
     setShowLogout(false);
   };
@@ -30,4 +32,5 @@ const Logout = ({ setShowLogout, userName, handleLogout }) => {
   );
 };
 
+// Export the Logout component as default
 export default Logout;

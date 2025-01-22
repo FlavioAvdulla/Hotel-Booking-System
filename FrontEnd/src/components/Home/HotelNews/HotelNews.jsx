@@ -33,14 +33,14 @@ const HotelNews = () => {
             </div>
           </div>
           <div className="hotel-news-section-01-image">
-          <div className="blend-color"></div>
+            <div className="blend-color"></div>
             <img src={hotel_news_01} alt={hotel_news_01} />
           </div>
         </div>
 
         <div className="hotel-news-section-02">
           <div className="hotel-news-section-02-image">
-          <div className="blend-color"></div>
+            <div className="blend-color"></div>
             <img src={hotel_news_03} alt={hotel_news_03} />
           </div>
           <div className="hotel-news-section-02-post">
@@ -62,7 +62,7 @@ const HotelNews = () => {
         </div>
         <div className="hotel-news-section-03">
           <div className="hotel-news-section-03-post">
-          <div className="hotel-news-section-02-post-img">
+            <div className="hotel-news-section-02-post-img">
               <img src={hotel_news_04} alt={hotel_news_04} />
               <div className="hotel-news-section-02-post-info">
                 <h2>LUXURY HOTEL</h2>
@@ -78,8 +78,8 @@ const HotelNews = () => {
             </div>
           </div>
           <div className="hotel-news-section-03-image">
-          <div className="blend-color"></div>
-          <img src={hotel_news_05} alt={hotel_news_05} />
+            <div className="blend-color"></div>
+            <img src={hotel_news_05} alt={hotel_news_05} />
           </div>
         </div>
       </div>

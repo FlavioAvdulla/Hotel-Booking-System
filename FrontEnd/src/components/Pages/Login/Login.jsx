@@ -1,34 +1,39 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { IoIosCloseCircle } from "react-icons/io";
-import axios from 'axios';
+import { IoIosCloseCircle } from "react-icons/io"; // Icon for closing the login form
+import axios from "axios"; // Library for making HTTP requests
 
 const Login = ({ setShowLogin, setShowSignup, setUserName }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  // State variables for managing email, password, and error messages
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Form submitted. Email: ${email}, Password: ${password}`);
-    axios.post('http://localhost:3001/login', { email, password })
-      .then(result => {
+    axios
+      .post("http://localhost:3001/login", { email, password })
+      .then((result) => {
         console.log(result.data);
-        setErrorMessage('');
-        setUserName(result.data.name);
-        localStorage.setItem('token', result.data.token); // Save token
-        setShowLogin(false);
+        setErrorMessage(""); // Clear any previous error messages
+        setUserName(result.data.name); // Set the username
+        localStorage.setItem("token", result.data.token); // Save the token
+        setShowLogin(false); // Close the login form
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
-        setErrorMessage('Login failed. Please check your email and password.');
+        setErrorMessage("Login failed. Please check your email and password.");
       });
   };
 
+  // Handle closing the login form
   const handleClose = () => {
     setShowLogin(false);
   };
 
+  // Handle opening the signup form
   const handleSignupOpen = () => {
     setShowLogin(false);
     setShowSignup(true);
@@ -72,7 +77,9 @@ const Login = ({ setShowLogin, setShowSignup, setUserName }) => {
           {errorMessage && <p>{errorMessage}</p>}
         </div>
         <div className="sign-up-button">
-          <button type="button" onClick={handleSignupOpen}>SIGN UP</button>
+          <button type="button" onClick={handleSignupOpen}>
+            SIGN UP
+          </button>
         </div>
       </form>
     </div>

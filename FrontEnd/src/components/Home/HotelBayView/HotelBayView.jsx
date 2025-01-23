@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./HotelBayView.css";
 import bayview_01 from "../../../assets/images/bayview_01.png";

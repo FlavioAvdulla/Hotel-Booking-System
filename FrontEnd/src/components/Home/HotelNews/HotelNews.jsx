@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./HotelNews.css";
 import hotel_news_01 from "../../../assets/images/hotel_news_01.jpg";

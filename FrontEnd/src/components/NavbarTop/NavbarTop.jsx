@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import "./NavbarTop.css";
 
 // NavbarTop component definition
+// eslint-disable-next-line react/prop-types
 const NavbarTop = ({ setShowLogin, userName, setShowLogout, setUserName }) => {
   // Hook to get the current location (URL) of the app
   const location = useLocation();

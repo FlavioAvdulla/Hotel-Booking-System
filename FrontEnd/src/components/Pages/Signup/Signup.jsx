@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"; // Import React and hooks
 import "./Signup.css"; // Import CSS file for styling
 import { IoIosCloseCircle } from "react-icons/io"; // Import Close icon from react-icons library
 import axios from "axios"; // Import axios for HTTP requests
 
 // Signup component definition
+// eslint-disable-next-line react/prop-types
 const Signup = ({ setShowSignup, setShowLogin }) => {
   // State variables for form inputs and messages
   const [name, setName] = useState("");

@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"; // Import React library
 import "./Logout.css"; // Import CSS file for styling
 import { IoIosCloseCircle } from "react-icons/io"; // Import Close icon from react-icons library
 
 // Logout component definition
+// eslint-disable-next-line react/prop-types
 const Logout = ({ setShowLogout, userName, handleLogout }) => {
   // Function to handle the closing of the logout modal
   const handleClose = () => {

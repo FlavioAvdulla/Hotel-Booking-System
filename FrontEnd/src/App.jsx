@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react"; // Import React and hooks
 import NavbarTop from "./components/NavbarTop/NavbarTop"; // Import NavbarTop component
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import Router components for routing

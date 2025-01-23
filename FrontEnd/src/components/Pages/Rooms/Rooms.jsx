@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"; // Import React library
 import "./Rooms.css"; // Import CSS file for styling
 import room_01 from "../../../assets/images/rooms/room_01.jpg"; // Import room images

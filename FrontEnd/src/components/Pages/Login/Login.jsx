@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "./Login.css";
 import { IoIosCloseCircle } from "react-icons/io"; // Icon for closing the login form
 import axios from "axios"; // Library for making HTTP requests
 
+// eslint-disable-next-line react/prop-types
 const Login = ({ setShowLogin, setShowSignup, setUserName }) => {
   // State variables for managing email, password, and error messages
   const [email, setEmail] = useState("");

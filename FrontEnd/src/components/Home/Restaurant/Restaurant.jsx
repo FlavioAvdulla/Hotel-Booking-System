@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Restaurant.css";
 import restaurant_01 from "../../../assets/images/restaurant_01.jpg";

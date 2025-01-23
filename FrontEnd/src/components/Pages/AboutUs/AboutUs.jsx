@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from "react";
 import "./AboutUs.css";
-import { staff } from "../../pages/AboutUs/Staff";
+import { staff } from "./Staff";
 import { FaStar } from "react-icons/fa";
 
 // Import Swiper React components

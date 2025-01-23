@@ -15,15 +15,15 @@ import { Navigation, Pagination } from "swiper/modules";
 // import  texts  from "../../pages/AboutUs/texts.json"
 
 // Images
-import about_us_01 from "../../../assets/images/about-us/about_us_01.jpg";
-import about_us_02 from "../../../assets/images/about-us/about_us_02.jpg";
-import bed_icon from "../../../assets/images/about-us/bed_icon.svg";
-import discount_icon from "../../../assets/images/about-us/discount_icon.svg";
-import wifi_icon from "../../../assets/images/about-us/wifi_icon.svg";
-import log_out_icon from "../../../assets/images/about-us/log_out_icon.svg";
-import review_icon from "../../../assets/images/about-us/review_icon.svg";
-import about_us_03 from "../../../assets/images/about-us/about_us_03.jpg";
-import review_01 from "../../../assets/images/about-us/review_01.jpg";
+import about_us_01 from "../../../assets/images/About-us/about_us_01.jpg";
+import about_us_02 from "../../../assets/images/About-us/about_us_02.jpg";
+import bed_icon from "../../../assets/images/About-us/bed_icon.svg";
+import discount_icon from "../../../assets/images/About-us/discount_icon.svg";
+import wifi_icon from "../../../assets/images/About-us/wifi_icon.svg";
+import log_out_icon from "../../../assets/images/About-us/log_out_icon.svg";
+import review_icon from "../../../assets/images/About-us/review_icon.svg";
+import about_us_03 from "../../../assets/images/About-us/about_us_03.jpg";
+import review_01 from "../../../assets/images/About-us/review_01.jpg";
 
 const AboutUs = () => {
   const [rating, setRating] = useState(null);

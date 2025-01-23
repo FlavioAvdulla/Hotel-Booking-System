@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./BestRooms.css";
-import best_room_01 from "../../../assets/images/best_room_01.jpg";
-import best_room_02 from "../../../assets/images/best_room_02.jpg";
-import best_room_03 from "../../../assets/images/best_room_03.jpg";
-import best_room_04 from "../../../assets/images/best_room_04.jpg";
-import best_room_05 from "../../../assets/images/best_room_05.jpg";
+import best_room_01 from "../../../assets/images/rooms/best_room_01.jpg";
+import best_room_02 from "../../../assets/images/rooms/best_room_02.jpg";
+import best_room_03 from "../../../assets/images/rooms/best_room_03.jpg";
+import best_room_04 from "../../../assets/images/rooms/best_room_04.jpg";
+import best_room_05 from "../../../assets/images/rooms/best_room_05.jpg";
 
 const BestRooms = () => {
   return (

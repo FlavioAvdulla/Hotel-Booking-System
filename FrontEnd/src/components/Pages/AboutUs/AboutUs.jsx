@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from "react";
 import "./AboutUs.css";
-import { staff } from "../../pages/AboutUs/Staff.js";
+import { staff } from "../../pages/AboutUs/Staff";
 import { FaStar } from "react-icons/fa";
 
 // Import Swiper React components
@@ -94,8 +95,8 @@ const AboutUs = () => {
               <h1>CRAFTING UNIQUE EXPERIENCES</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <button>
                 VIEW MORE!<i className="fa-solid fa-arrow-right"></i>
@@ -152,8 +153,8 @@ const AboutUs = () => {
               <h1>CRAFTING UNIQUE EXPERIENCES</h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s.
               </p>
               <button>
                 VIEW MORE!<i className="fa-solid fa-arrow-right"></i>
@@ -238,12 +239,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">
@@ -270,12 +271,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">
@@ -307,12 +308,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">
@@ -339,12 +340,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">
@@ -376,12 +377,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">
@@ -408,12 +409,12 @@ const AboutUs = () => {
                   <img src={review_icon} alt={review_icon} />
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum has been the
-                    industry's standard. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard...
+                    typesetting industry. Lorem Ipsum has been the
+                    industry&apos;s standard. Lorem Ipsum is simply dummy text
+                    of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry&apos;s standard. Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard...
                   </p>
                 </div>
                 <div className="review-client">

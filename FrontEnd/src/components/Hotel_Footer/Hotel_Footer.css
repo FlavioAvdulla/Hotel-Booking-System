@@ -4,7 +4,6 @@
     height: 55vh;
     margin: auto;
     background-color: var(--dark-grey);
-    overflow: hidden;
 }
 
 .hotel-footer-section {

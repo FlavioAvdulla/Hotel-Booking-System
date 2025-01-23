@@ -3,6 +3,7 @@
     height: 100%;
     margin: 100px auto 100px auto;
     background-color: var(--light-grey);
+    overflow: hidden;
 }
 
 .best-rooms-head {

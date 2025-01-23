@@ -1,5 +1,6 @@
 .navbar-top {
     background-color: antiquewhite;
+    overflow: hidden;
 }
 
 .navbar-sections-top {

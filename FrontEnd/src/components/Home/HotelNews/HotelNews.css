@@ -4,6 +4,7 @@
     height: 100%;
     margin: 0px auto 100px auto;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .hotel-news-head {

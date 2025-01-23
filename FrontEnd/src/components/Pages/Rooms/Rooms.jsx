@@ -1,12 +1,12 @@
 import React from "react"; // Import React library
 import "./Rooms.css"; // Import CSS file for styling
-import room_01 from "../../../../assets/images/rooms/room_01.jpg"; // Import room images
-import room_02 from "../../../../assets/images/rooms/room_02.jpg";
-import room_03 from "../../../../assets/images/rooms/room_03.jpg";
-import room_04 from "../../../../assets/images/rooms/room_04.jpg";
-import room_05 from "../../../../assets/images/rooms/room_05.jpg";
-import room_06 from "../../../../assets/images/rooms/room_06.jpg";
-import room_07 from "../../../../assets/images/rooms/room_07.jpg";
+import room_01 from "../../../assets/images/rooms/room_01.jpg"; // Import room images
+import room_02 from "../../../assets/images/rooms/room_02.jpg";
+import room_03 from "../../../assets/images/rooms/room_03.jpg";
+import room_04 from "../../../assets/images/rooms/room_04.jpg";
+import room_05 from "../../../assets/images/rooms/room_05.jpg";
+import room_06 from "../../../assets/images/rooms/room_06.jpg";
+import room_07 from "../../../assets/images/rooms/room_07.jpg";
 
 // Rooms component definition
 const Rooms = () => {

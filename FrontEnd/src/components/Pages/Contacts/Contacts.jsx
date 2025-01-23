@@ -3,7 +3,7 @@ import "./Contacts.css";
 
 // Photos
 
-// import about_us_01 from "../../../assets/images/about-us/about_us_01.jpg";
+import about_us_01 from "../../../assets/images/about-us/about_us_01.jpg";
 import contacts_01 from "../../../assets/images/Contacts/contacts_01.jpg";
 import contacts_02 from "../../../assets/images/Contacts/contacts_02.jpg";
 
@@ -58,7 +58,7 @@ const Contacts = () => {
           </button>
         </div>
         <div className="banner-photo">
-          <img src={about_us_02} alt={about_us_02} />
+          <img src={about_us_01} alt={about_us_01} />
         </div>
       </div>
 

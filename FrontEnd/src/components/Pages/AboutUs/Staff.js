@@ -1,14 +1,14 @@
 // Import staff images
-import Emma_Johnson from "../../../assets/images/about-us/Emma_Johnson.jpg";
-import Olivia_Martinez from "../../../assets/images/about-us/Olivia_Martinez.jpg";
-import Liam_Davis from "../../../assets/images/about-us/Liam_Davis.jpg";
-import Noah_Garcia from "../../../assets/images/about-us/Noah_Garcia.jpg";
-import Ava_Robinson from "../../../assets/images/about-us/Ava_Robinson.jpg";
-import William_Smith from "../../../assets/images/about-us/William_Smith.jpg";
-import James_Brown from "../../../assets/images/about-us/James_Brown.jpg";
-import Sophia_Lee from "../../../assets/images/about-us/Sophia_Lee.jpg";
-import Isabella_Wilson from "../../../assets/images/about-us/Isabella_Wilson.jpg";
-import Benjamin_Anderson from "../../../assets/images/about-us/Benjamin_Anderson.jpg";
+import Emma_Johnson from "../../../assets/images/About-us/Emma_Johnson.jpg";
+import Olivia_Martinez from "../../../assets/images/About-us/Olivia_Martinez.jpg";
+import Liam_Davis from "../../../assets/images/About-us/Liam_Davis.jpg";
+import Noah_Garcia from "../../../assets/images/About-us/Noah_Garcia.jpg";
+import Ava_Robinson from "../../../assets/images/About-us/Ava_Robinson.jpg";
+import William_Smith from "../../../assets/images/About-us/William_Smith.jpg";
+import James_Brown from "../../../assets/images/About-us/James_Brown.jpg";
+import Sophia_Lee from "../../../assets/images/About-us/Sophia_Lee.jpg";
+import Isabella_Wilson from "../../../assets/images/About-us/Isabella_Wilson.jpg";
+import Benjamin_Anderson from "../../../assets/images/About-us/Benjamin_Anderson.jpg";
 
 // Export an array of staff objects
 export const staff = [

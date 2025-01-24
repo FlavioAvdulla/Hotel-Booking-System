@@ -19,7 +19,7 @@ Welcome to the Hotel Booking System, a comprehensive platform designed to offer 
 ## Overview
 The Hotel Booking System allows users to browse and book rooms, view hotel information, manage bookings, and more. It features a user-friendly interface and a robust backend to handle all necessary operations securely.
 
-## Project Preciew
+## Project Preview
 
 [CLICK FOR PREVIEW HERE](https://hotel-website-sage-five.vercel.app/)
 

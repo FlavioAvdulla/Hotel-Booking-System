@@ -4,7 +4,7 @@ Welcome to the Hotel Booking System, a comprehensive platform designed to offer 
 
 ## Table of Contents
 - [Overview](#overview)
-- [Screenshots](#Screenshots)
+- [Screenshots](#Preview)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup](#setup)

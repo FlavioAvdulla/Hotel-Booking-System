@@ -41,7 +41,7 @@
 }
 
 .restaurant-section-info-head h2 {
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     font-size: 19px;
     margin: 0px 0px 12px 0px;
     color: var(--gold-color);
@@ -49,8 +49,8 @@
 }
 
 .restaurant-section-info-head h1 {
+    font-family: 'CamptonSemiBold', sans-serif;
     font-size: 30px;
-    font-weight: 400;
     color: var(--gold-color);
     text-align: center;
 }
@@ -70,7 +70,7 @@
 .restaurant-section button {
     border: 1px solid var(--gold-color);
     font-size: 15px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     width: 11vw;
     padding: 8px;
     color: white;

@@ -32,6 +32,7 @@
 }
 
 .page-sections li {
+    font-family: 'CamptonLight', sans-serif;
     text-align: center;
     width: 100px;
     list-style: none;
@@ -62,6 +63,7 @@
 }
 
 .navbar-bottom button {
+    font-family: 'CamptonLight', sans-serif;
     border: 1px solid var(--gold-color);
     width: 150px;
     font-weight: 300;

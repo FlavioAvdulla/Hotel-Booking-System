@@ -35,43 +35,36 @@
 }
 
 .info h2 {
+    font-family: 'CamptonThin', sans-serif;
     color: white;
-    font-weight: 300;
     font-size: 20px;
 }
 
 .info h1 {
     color: white;
     font-size: 55px;
-    font-weight: 600;
-    /* margin: 80px 0px 0px 0px; */
+    font-family: 'Campton', sans-serif;
 }
 
 .info span {
     color: var(--gold-color);
     font-size: 55px;
-    font-weight: 600;
 }
 
 .info p {
-    /* font-size: 15px; */
-    font-weight: 300;
     color: white;
     text-align: justify;
     text-align-last: left;
-    /* margin: 40px 0px 0px 0px; */
 }
 
 .info button {
     border: 1px solid var(--gold-color);
     font-size: 15px;
-    font-weight: 300;
-    /* margin: 0 auto; */
-    width: 13vw;
+    font-family: 'CamptonLight', sans-serif;
+    width: 15vw;
     padding: 8px;
     color: white;
     background-color: var(--gold-color);
-    /* margin: 55px 0px 0px 0px; */
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
@@ -112,7 +105,6 @@
     text-align-last: center;
     margin: 40px auto 0px auto;
     color: var(--grey-color);
-    font-weight: 400;
 }
 
 @media (max-width: 1600px) {
@@ -129,8 +121,6 @@
     .info h1,
     .info span {
         font-size: 50px;
-        font-weight: 600;
-        /* margin: 80px 0px 0px 0px; */
     }
 }
 
@@ -138,8 +128,6 @@
     .info h1,
     .info span {
         font-size: 40px;
-        font-weight: 600;
-        /* margin: 80px 0px 0px 0px; */
     }
 
     .info {
@@ -177,8 +165,6 @@
     .info h1,
     .info span {
         font-size: 37px;
-        font-weight: 600;
-        /* margin: 80px 0px 0px 0px; */
     }
 
     .hotel-location-container {
@@ -262,8 +248,6 @@
     .info h1,
     .info span {
         font-size: 35px;
-        font-weight: 600;
-        /* margin: 80px 0px 0px 0px; */
     }
 
     .assistant {

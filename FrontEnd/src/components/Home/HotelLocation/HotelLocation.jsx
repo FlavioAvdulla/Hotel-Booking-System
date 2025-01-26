@@ -18,9 +18,9 @@ const HotelLocation = () => {
             <div className="info-title">
               <h2>LUXURY HOTEL & BEST RESPORT</h2>
               <h1>
-                Discover our
+                DISCOVER OUR
                 <br />
-                <span>Location</span>
+                <span>LOCATION</span>
               </h1>
             </div>
             <p>

@@ -38,7 +38,7 @@
 .news-letter h1 {
     color: white;
     font-size: 25px;
-    font-weight: 400;
+    font-family: 'CamptonThin', sans-serif;
 
 }
 
@@ -49,13 +49,14 @@
     font-size: 18px;
     font-weight: 300;
     margin: 0px 0px 52px 0px;
+    font-family: 'CamptonThin', sans-serif;
 }
 
 .phone-support p,
 .connect-with-us p {
     color: white;
     font-size: 18px;
-    font-weight: 300;
+    font-family: 'CamptonThin', sans-serif;
 }
 
 .connect-with-us-icons {
@@ -82,6 +83,7 @@
     width: 300px;
     padding: 8px;
     border: 1px solid white;
+    font-family: 'CamptonLight', sans-serif;
     background-color: white;
     outline: none;
 }
@@ -89,7 +91,7 @@
 .news-letter-input button {
     border: 1px solid var(--gold-color);
     font-size: 15px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     width: 8vw;
     padding: 8px;
     color: white;

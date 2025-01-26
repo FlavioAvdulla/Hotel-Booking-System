@@ -33,6 +33,9 @@ const NavbarBottom = () => {
     } else if (path.includes("/contacts")) {
       setActiveSection("Contacts");
     }
+      else if (path.includes("/gallery")) {
+      setActiveSection("Gallery");
+    }
   }, [location]);
 
   // Function to handle logo click, navigates to home and closes mobile menu
@@ -119,13 +122,13 @@ const NavbarBottom = () => {
               <Link to="/pages">Pages</Link>
             </li>
             <li
-              className={activeSection === "News" ? "active" : ""}
+              className={activeSection === "Gallery" ? "active" : ""}
               onClick={() => {
-                setActiveSection("News");
+                setActiveSection("Gallery");
                 setMobileMenu(false);
               }}
             >
-              <Link to="/news">News</Link>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li
               className={activeSection === "Contact" ? "active" : ""}

@@ -1,36 +1,163 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"; */
 
+@font-face {
+  font-family: 'CamptonBlack';
+  src: url('./assets/fonts/CamptonBlack.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonBlackItalic';
+  src: url('./assets/fonts/CamptonBlackItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonBold';
+  src: url('./assets/fonts/CamptonBold.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonBoldItalic';
+  src: url('./assets/fonts/CamptonBoldItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonBook';
+  src: url('./assets/fonts/CamptonBook.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonBookItalic';
+  src: url('./assets/fonts/CamptonBookItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonExtraBold';
+  src: url('./assets/fonts/CamptonExtraBold.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonExtraBoldItalic';
+  src: url('./assets/fonts/CamptonExtraBoldItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonExtraLight';
+  src: url('./assets/fonts/CamptonExtraLight.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonExtraLightItalic';
+  src: url('./assets/fonts/CamptonExtraLightItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonLight';
+  src: url('./assets/fonts/CamptonLight.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonLightItalic';
+  src: url('./assets/fonts/CamptonLightItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonMedium';
+  src: url('./assets/fonts/CamptonMedium.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonMediumItalic';
+  src: url('./assets/fonts/CamptonMediumItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonSemiBold';
+  src: url('./assets/fonts/CamptonSemiBold.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonSemiBoldItalic';
+  src: url('./assets/fonts/CamptonSemiBoldItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonThin';
+  src: url('./assets/fonts/CamptonThin.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+  font-family: 'CamptonThinItalic';
+  src: url('./assets/fonts/CamptonThinItalic.otf') format('opentype');
+  /* font-weight: 900;
+    font-style: normal; */
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Lato;
-    font-size: 15px;
-    box-sizing: border-box;
-    --gold-color: rgb(196, 154, 93);
-    --black-color-transparency: rgba(0, 0, 0, 0.849);
-    --light-grey: rgba(247, 247, 247);
-    --grey-color: rgba(117, 117, 117);
-    --dark-grey: rgb(31, 31, 31);
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  --gold-color: rgb(196, 154, 93);
+  --black-color-transparency: rgba(0, 0, 0, 0.849);
+  --light-grey: rgba(247, 247, 247);
+  --grey-color: rgba(117, 117, 117);
+  --dark-grey: rgb(31, 31, 31);
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 a {
-    color: var(--dark-grey);
-    text-decoration: none;
-    color: inherit;
+  font-family: 'CamptonLight', sans-serif;
+  color: var(--dark-grey);
+  text-decoration: none;
+  color: inherit;
 }
 
 p {
-    color: var(--dark-grey);
-    /* font-weight: 400; */
-    font-size: 15px;
+  color: var(--dark-grey);
+  /* font-weight: 400; */
+  font-family: 'CamptonLight', sans-serif;
+  font-size: 15px;
 }
 
 h1,
 h2 {
-    color: var(--dark-grey);
+  color: var(--dark-grey);
 }

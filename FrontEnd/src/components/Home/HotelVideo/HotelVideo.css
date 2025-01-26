@@ -17,15 +17,15 @@
 }
 
 .hotel-video-head h2 {
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     font-size: 19px;
     margin: 0px 0px 12px 0px;
     color: var(--gold-color);
 }
 
 .hotel-video-head h1 {
+    font-family: 'CamptonSemiBold', sans-serif;
     font-size: 30px;
-    font-weight: 400;
     color: var(--gold-color);
 }
 
@@ -98,12 +98,12 @@
 .video-design-text span {
     color: var(--gold-color);
     font-size: 60px;
-    font-weight: 400;
+    font-family: 'CamptonSemiBold', sans-serif;
 }
 
 .video-design-text h1 {
     font-size: 60px;
-    font-weight: 400;
+    font-family: 'CamptonSemiBold', sans-serif;
     color: white;
 }
 

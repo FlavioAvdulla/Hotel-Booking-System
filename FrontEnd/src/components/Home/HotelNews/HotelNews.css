@@ -17,15 +17,15 @@
 }
 
 .hotel-news-head h2 {
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     font-size: 19px;
     margin: 0px 0px 12px 0px;
     color: var(--gold-color);
 }
 
 .hotel-news-head h1 {
+    font-family: 'CamptonSemiBold', sans-serif;
     font-size: 30px;
-    font-weight: 400;
     color: var(--gold-color);
 }
 
@@ -70,8 +70,8 @@
 .hotel-news-section-01-post-info h2,
 .hotel-news-section-02-post-info h2,
 .hotel-news-section-03-post-info h2 {
-    font-weight: 300;
     font-size: 19px;
+    font-family: 'CamptonLight', sans-serif;
     margin: 0px 0px 12px 0px;
     color: var(--gold-color);
 }
@@ -80,7 +80,7 @@
 .hotel-news-section-02-post-info h1,
 .hotel-news-section-03-post-info h1 {
     font-size: 30px;
-    font-weight: 400;
+    font-family: 'CamptonSemiBold', sans-serif;
     color: var(--gold-color);
     margin: 0px 0px 25px 0px;
 }
@@ -110,7 +110,7 @@
 .hotel-news-section-03-post-info button {
     border: 1px solid var(--gold-color);
     font-size: 15px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     width: 8vw;
     padding: 8px;
     color: white;

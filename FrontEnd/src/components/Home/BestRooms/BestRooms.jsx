@@ -18,7 +18,7 @@ const BestRooms = () => {
           <div className="best-rooms-left">
             <img src={best_room_01} alt={best_room_01} />
             <div className="best-rooms-left-info">
-              <h1>Best Room</h1>
+              <h1>BEST ROOMS</h1>
               <div className="best-rooms-left-icons">
                 <i className="fa-regular fa-circle-user"></i>
                 <p>2 GUESTS</p>

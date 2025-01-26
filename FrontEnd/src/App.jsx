@@ -4,6 +4,8 @@ import NavbarTop from "./components/NavbarTop/NavbarTop"; // Import NavbarTop co
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import Router components for routing
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome CSS for icons
 import NavbarBottom from "./components/NavbarBottom/NavbarBottom"; // Import NavbarBottom component
+
+// Home Components
 import Header from "./components/Home/Header/Header"; // Import Header component
 import HotelBayView from "./components/Home/HotelBayView/HotelBayView"; // Import HotelBayView component
 import BestRooms from "./components/Home/BestRooms/BestRooms"; // Import BestRooms component
@@ -12,6 +14,8 @@ import Restaurant from "./components/Home/Restaurant/Restaurant"; // Import Rest
 import HotelVideo from "./components/Home/HotelVideo/HotelVideo"; // Import HotelVideo component
 import HotelNews from "./components/Home/HotelNews/HotelNews"; // Import HotelNews component
 import Hotel_Footer from "./components/Hotel_Footer/Hotel_Footer"; // Import Hotel_Footer component
+
+// Pages
 import Rooms from "./components/Pages/Rooms/Rooms"; // Import Rooms component
 import AboutUs from "./components/Pages/AboutUs/AboutUs"; // Import AboutUs component
 import Contacts from "./components/Pages/Contacts/Contacts"; // Import Contacts component
@@ -19,6 +23,7 @@ import Login from "./components/Pages/Login/Login"; // Import Login component
 import Signup from "./components/Pages/Signup/Signup"; // Import Signup component
 import Logout from "./components/Pages/Logout/Logout"; // Import Logout component
 import axios from 'axios'; // Import axios for HTTP requests
+import Gallery from "./components/Pages/Gallery/Gallery";
 
 // Main App component definition
 const App = () => {
@@ -63,6 +68,7 @@ const App = () => {
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/" element={
               <>
                 <Header />

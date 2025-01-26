@@ -4,7 +4,7 @@ Welcome to the Hotel Booking System, a comprehensive platform designed to offer 
 
 ## Table of Contents
 - [Overview](#overview)
-- [Screenshots](#Screenshots)
+- [Project Preview](#ProjectPreview)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -19,18 +19,9 @@ Welcome to the Hotel Booking System, a comprehensive platform designed to offer 
 ## Overview
 The Hotel Booking System allows users to browse and book rooms, view hotel information, manage bookings, and more. It features a user-friendly interface and a robust backend to handle all necessary operations securely.
 
-## Screenshots
-[Hotel_Website_Screenshot (1)](https://github.com/user-attachments/assets/ed467e1d-39b7-4c78-b9ac-45ad72f0a28c)
+## ProjectPreview
 
-[Hotel_Website_Screenshot (3)](https://github.com/user-attachments/assets/de771312-1513-40bd-b074-297eca3e5182)
-
-[Hotel_Website_Screenshot (2)](https://github.com/user-attachments/assets/6d5f1327-18b8-43ed-aa0e-7cbea12d6f66)
-
-[Hotel_Website_Screenshot (4)](https://github.com/user-attachments/assets/528da01e-5f77-4b59-b5da-a686e8ee47b6)
-
-[Hotel_Website_Screenshot (5)](https://github.com/user-attachments/assets/ca96f08f-7d6f-4ae4-8589-b17dbf3f53d4)
-
-[Hotel_Website_Screenshot (6)](https://github.com/user-attachments/assets/37aec9db-1fa2-42ad-8b9e-57c002fbcec9)
+[CLICK FOR PREVIEW HERE](https://hotel-website-sage-five.vercel.app/)
 
 
 ## Features

@@ -19,25 +19,25 @@ const Gallery = () => {
         </div>
 
         <div className="gallery-photos">
-          <div className="section-01">
+          <div className="gallery-section-01">
             <img src={gallery_01} alt="gallery_01" />
             <img src={gallery_02} alt="gallery_02" />
           </div>
-          <div className="section-01">
+          <div className="gallery-section-01">
             <img src={gallery_01} alt="gallery_01" />
             <img src={gallery_01} alt="gallery_01" />
           </div>
-          <div className="section-01">
+          <div className="gallery-section-01">
             <img src={gallery_02} alt="gallery_02" />
             <img src={gallery_02} alt="gallery_02" />
             <img src={gallery_01} alt="gallery_01" />
           </div>
-          <div className="section-01">
+          <div className="gallery-section-01">
             <img src={gallery_01} alt="gallery_01" />
             <img src={gallery_02} alt="gallery_02" />
             <img src={gallery_02} alt="gallery_02" />
           </div>
-          <div className="section-01">
+          <div className="gallery-section-01">
             <img src={gallery_02} alt="gallery_02" />
             <img src={gallery_01} alt="gallery_01" />
           </div>

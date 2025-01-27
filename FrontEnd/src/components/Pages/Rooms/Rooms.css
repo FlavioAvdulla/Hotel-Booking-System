@@ -79,20 +79,19 @@
 
 .room-price h1 {
     font-size: 30px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--grey-color);
 }
 
 .room-price p {
     font-size: 25px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--grey-color);
 }
 
 .room-price span {
     font-size: 20px;
-    font-weight: 300;
-    /* color: #ffc800; */
+    font-family: 'CamptonLight', sans-serif;
 }
 
 .room-details {
@@ -151,6 +150,7 @@
 .room-detail-02-text h2,
 .room-detail-03-text h2,
 .room-detail-04-text h2 {
+    font-family: 'CamptonBook', sans-serif;
     font-size: 17px;
     margin: 0px 0px 4px 0px;
     color: var(--grey-color);
@@ -191,7 +191,7 @@
 .room-about-description h1 {
     margin: 0px 0px 10px 0px;
     font-size: 28px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--grey-color);
 }
 
@@ -259,6 +259,7 @@
 .business-centre p,
 .sun-terrace p,
 .concierge-service p {
+    font-family: 'CamptonBook', sans-serif;
     color: var(--grey-color);
 }
 
@@ -319,6 +320,7 @@
     font-size: 30px;
     font-weight: 400;
     text-align: center;
+    font-family: 'CamptonBook', sans-serif;
     margin: 0px 0px 15px 0px;
     color: var(--grey-color);
 }
@@ -364,7 +366,7 @@
 .high-season-details span,
 .medium-season-details span,
 .low-season-details span {
-    font-weight: 800;
+    font-family: 'CamptonSemiBold', sans-serif;
 }
 
 .high-season-details p,
@@ -378,7 +380,7 @@
 .low-season-details button {
     border: 1px solid var(--gold-color);
     width: 200px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: var(--gold-color);
     padding: 7px;
     color: white;
@@ -426,6 +428,7 @@
     .room-detail-02-text h2,
     .room-detail-03-text h2,
     .room-detail-04-text h2 {
+        
         font-size: 18px;
         margin: 0px 0px 15px 0px;
     }

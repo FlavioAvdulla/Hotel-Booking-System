@@ -50,7 +50,7 @@
 
 .banner-info h1 {
     font-size: 50px;
-    font-weight: 300;
+    font-family: 'CamptonBook', sans-serif;
     text-align: center;
     color: white;
 
@@ -71,7 +71,7 @@
     display: flex;
     border: 1px solid var(--gold-color);
     width: 200px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     margin: 0px auto 0px auto;
     background-color: rgba(0, 0, 0, 0.297);
     padding: 12px 7px;
@@ -158,18 +158,18 @@
 
 .fa-circle-check {
     color: var(--gold-color);
-    margin: 3px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .section-02-content-info h1 {
     font-size: 50px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--gold-color);
 }
 
 .section-02-content-info h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
 }
 
@@ -184,7 +184,7 @@
     align-items: center;
     border: 1px solid var(--gold-color);
     width: 170px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: var(--gold-color);
     padding: 7px;
     color: white;
@@ -244,13 +244,13 @@
 
 .section-03-content-info h1 {
     font-size: 50px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--gold-color);
 }
 
 .section-03-content-info h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
 }
 
@@ -266,7 +266,7 @@
     align-items: center;
     border: 1px solid var(--gold-color);
     width: 170px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: var(--gold-color);
     padding: 7px;
     color: white;
@@ -400,19 +400,18 @@
 
 .section-04-content-info h1 {
     font-size: 50px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--gold-color);
 }
 
 .section-04-content-info h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
 }
 
 .section-04-content-info p {
     color: white;
-    font-weight: 300;
 }
 
 .section-04-content-info button {
@@ -421,7 +420,7 @@
     align-items: center;
     border: 1px solid var(--gold-color);
     width: 170px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: var(--gold-color);
     padding: 7px;
     margin: 10px 0px 0px 0px;
@@ -515,7 +514,7 @@
 
 .photo-item-info h1 {
     font-size: 22px;
-    font-weight: 400;
+    font-family: 'CamptonSemiBold', sans-serif;
     color: var(--dark-grey);
 }
 
@@ -563,13 +562,13 @@
 
 .section-05-content-info h1 {
     font-size: 30px;
-    font-weight: 400;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--gold-color);
 }
 
 .section-05-content-info h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
     margin: 0px 0px 10px 0px;
 }
@@ -602,14 +601,14 @@
 }
 
 .section-06-content-info h1 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 30px;
+    font-family: 'CamptonBook', sans-serif;
     color: var(--gold-color);
 }
 
 .section-06-content-info h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
 }
 
@@ -690,7 +689,6 @@
 .review-description-section p {
     text-align: justify;
     text-align-last: left;
-    font-weight: 300;
 }
 
 .review-client {
@@ -722,12 +720,8 @@
 }
 
 .client-info-name h1 {
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     font-size: 18px;
-}
-
-.client-info-name p {
-    font-weight: 300;
 }
 
 .client-photo img {
@@ -752,7 +746,7 @@
 
 .submit-review h1 {
     font-size: 35px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--gold-color);
     /* background-color: aqua; */
 }
@@ -789,6 +783,7 @@
     padding: 20px 24px;
     border: 1px solid white;
     background-color: white;
+    font-family: 'CamptonLight', sans-serif;
     outline: none;
     resize: vertical;
     scrollbar-width: none;
@@ -801,6 +796,7 @@
     padding: 20px 24px;
     border: 1px solid white;
     background-color: white;
+    font-family: 'CamptonLight', sans-serif;
     outline: none;
     resize: vertical;
     scrollbar-width: none;
@@ -821,7 +817,7 @@
 .submit-review-input button {
     border: 1px solid var(--gold-color);
     font-size: 15px;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     width: 12vw;
     padding: 8px;
     color: white;

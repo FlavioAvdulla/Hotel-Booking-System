@@ -39,7 +39,6 @@
 
 .contact-info-01 h1 {
     font-size: 50px;
-    font-weight: 300;
     text-align: center;
     color: white;
 }
@@ -49,16 +48,14 @@
     text-align: center;
     margin: 0px auto 0px auto;
     width: 50%;
-    font-weight: 300;
     color: white;
     justify-content: center;
 }
 
-.contact-info-01 button {
+.banner-info button {
     display: flex;
     border: 1px solid var(--gold-color);
-    width: 200px;
-    font-weight: 300;
+    width: 15vw;
     margin: 0px auto 0px auto;
     background-color: rgba(0, 0, 0, 0.297);
     padding: 12px 7px;
@@ -129,6 +126,7 @@
     outline: none;
     resize: vertical;
     scrollbar-width: none;
+    font-family: 'CamptonLight', sans-serif;
     color: var(--dark-grey);
 }
 
@@ -140,6 +138,7 @@
     background-color: var(--light-grey);
     outline: none;
     resize: vertical;
+    font-family: 'CamptonLight', sans-serif;
     scrollbar-width: none;
     color: var(--dark-grey);
 }
@@ -155,11 +154,12 @@
     justify-content: center;
     align-items: center;
     border: 1px solid var(--gold-color);
-    width: 170px;
+    width: 12vw;
     font-weight: 300;
     background-color: var(--gold-color);
     padding: 7px;
     color: white;
+    font-family: 'CamptonLight', sans-serif;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     gap: 20px;
@@ -198,9 +198,9 @@
 .location-info h1,
 .email-us-info h1,
 .phone-number-info h1 {
+    font-family: 'CamptonLight', sans-serif;
     font-size: 20px;
     color: var(--gold-color);
-    font-weight: 400;
     margin: 0px 0px 10px 0px;
 }
 

@@ -28,7 +28,6 @@
   }
   
   .gallery-title p {
-    font-family: 'Campton', sans-serif;
     margin: 0px auto;
     width: 50%;
   }
@@ -42,7 +41,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.section-01 {
+.gallery-section-01 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -51,8 +50,8 @@
     background-color: aquamarine;
 }
 
-.section-01 img,
-.section-02 img {
+.gallery-section-01 img,
+.gallery-section-01 img {
     width: 100%;
     height: auto;
     object-fit: cover;

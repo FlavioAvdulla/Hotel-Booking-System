@@ -11,6 +11,8 @@ import gallery_05 from "../../../assets/images/Gallery/gallery_05.jpg";
 import gallery_06 from "../../../assets/images/Gallery/gallery_06.jpg";
 import gallery_07 from "../../../assets/images/Gallery/gallery_07.jpg";
 import gallery_08 from "../../../assets/images/Gallery/gallery_08.jpg";
+import gallery_09 from "../../../assets/images/Gallery/gallery_09.jpg";
+import gallery_10 from "../../../assets/images/Gallery/gallery_10.jpg";
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ isOpen, src, onClose }) => {
@@ -69,8 +71,8 @@ const Gallery = () => {
             <img src={gallery_05} alt="gallery_05" onClick={() => handleImageClick(gallery_01)} />
           </div>
           <div className="gallery-section-01">
-            <img src={gallery_02} alt="gallery_02" onClick={() => handleImageClick(gallery_02)} />
-            <img src={gallery_01} alt="gallery_01" onClick={() => handleImageClick(gallery_01)} />
+            <img src={gallery_10} alt="gallery_10" onClick={() => handleImageClick(gallery_01)} />
+            <img src={gallery_09} alt="gallery_09" onClick={() => handleImageClick(gallery_02)} />
           </div>
         </div>
       </div>

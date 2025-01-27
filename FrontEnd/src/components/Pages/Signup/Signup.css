@@ -18,7 +18,7 @@
 
 .signup-title h1 {
     font-size: 25px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     /* margin: 0px 0px 30px 0px; */
 }
 
@@ -56,12 +56,12 @@
     resize: vertical;
     scrollbar-width: none;
     color: var(--dark-grey);
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
 }
 
 .signup-container h2 {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
 }
 
 .email h2,
@@ -78,7 +78,7 @@
     align-items: center;
     border: 1px solid var(--gold-color);
     width: 100%;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: var(--gold-color);
     padding: 15px;
     color: white;
@@ -94,13 +94,13 @@
 
 .success-message {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: rgb(0, 197, 0);
 }
 
 .error-message {
     font-size: 15px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     color: red;
 }
 
@@ -110,7 +110,7 @@
     align-items: center;
     border: 1px solid var(--gold-color);
     width: 100%;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: transparent;
     padding: 15px;
     color: var(--dark-grey);

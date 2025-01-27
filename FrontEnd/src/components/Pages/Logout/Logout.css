@@ -31,7 +31,7 @@
 
 .logout-title h1 {
     font-size: 25px;
-    font-weight: 400;
+    font-family: 'CamptonLight', sans-serif;
     /* margin: 0px 0px 30px 0px; */
 }
 
@@ -77,7 +77,7 @@
     align-items: center;
     border: 1px solid red;
     width: 100%;
-    font-weight: 300;
+    font-family: 'CamptonLight', sans-serif;
     background-color: red;
     padding: 15px;
     color: white;

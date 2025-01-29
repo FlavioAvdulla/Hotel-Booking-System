@@ -103,6 +103,8 @@
     margin: 0px 50px 0px 0px;
 }
 
+/*================================= section-02 */
+
 .gallery-container-02 {
     display: flex;
     width: 85%;
@@ -232,6 +234,8 @@
     color: white;
 }
 
+/*================================= section-03 */
+
 .gallery-container-03 {
     display: flex;
     width: 100%;
@@ -326,4 +330,72 @@
     transition: width 0.5s ease-in-out;
     mix-blend-mode: multiply;
 }
+/*================================= section-04 */
+.gallery-container-04 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 0px auto 100px auto;
+    /* background-color: antiquewhite; */
+    /* gap: 20px; */
+}
 
+.gallery-container-04-a,
+.gallery-container-04-b {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    /* background-color: azure; */
+}
+
+.gallery-container-04-a h2,
+.gallery-container-04-b h2 {
+    font-family: 'CamptonLight', sans-serif;
+}
+.gallery-container-04-a h1,
+.gallery-container-04-b h1 {
+    font-family: 'CamptonSemiBold', sans-serif;
+    font-size: 40px;
+}
+
+.gallery-container-04-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+}
+
+.gallery-container-04-img img {
+    width: 100%;
+    z-index: -10;
+}
+
+.gallery-container-04-a button,
+.gallery-container-04-b button {
+    display: flex;
+    border: 1px solid var(--gold-color);
+    width: 12vw;
+    font-family: 'CamptonLight', sans-serif;
+    margin: 0px auto 0px auto;
+    background-color: var(--gold-color);
+    padding: 9px 7px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-container-04-a button:hover,
+.gallery-container-04-b button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    scale: 105%;
+}

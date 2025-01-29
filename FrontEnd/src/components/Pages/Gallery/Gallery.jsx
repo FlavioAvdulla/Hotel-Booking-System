@@ -18,6 +18,7 @@ import gallery_10 from "../../../assets/images/Gallery/gallery_10.jpg";
 import gallery_11 from "../../../assets/images/Gallery/gallery_11.jpg";
 import gallery_12 from "../../../assets/images/Gallery/gallery_12.jpg";
 import gallery_13 from "../../../assets/images/Gallery/gallery_13.jpg";
+import gallery_14 from "../../../assets/images/Gallery/gallery_14.jpg";
 
 // Video
 import gallery_video_01 from "../../../assets/images/Gallery/gallery_video_01.mp4";
@@ -72,9 +73,9 @@ const Modal = ({ isOpen, currentIndex, onNext, onPrev, onClose }) => {
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const[count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-   const { ref, inView } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true, // only trigger once
     threshold: 0.1, // percentage of the element's visibility
   });
@@ -84,7 +85,6 @@ const Gallery = () => {
       setCount(30);
     }
   }, [inView]);
-
 
   const handleImageClick = (index) => {
     setCurrentIndex(index);
@@ -239,7 +239,9 @@ const Gallery = () => {
         <div className="gallery-section-03">
           <div className="record-1">
             <div className="record-1-num">
-              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+              <h1>
+                <CountUp className="num" start={0} end={count} duration={4} />
+              </h1>
             </div>
             <div className="record-1-info">
               <h1>Suites</h1>
@@ -248,7 +250,9 @@ const Gallery = () => {
           </div>
           <div className="record-2">
             <div className="record-1-num">
-              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+              <h1>
+                <CountUp className="num" start={0} end={count} duration={4} />
+              </h1>
             </div>
             <div className="record-1-info">
               <h1>Suites</h1>
@@ -257,7 +261,9 @@ const Gallery = () => {
           </div>
           <div className="record-3">
             <div className="record-1-num">
-              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+              <h1>
+                <CountUp className="num" start={0} end={count} duration={4} />
+              </h1>
             </div>
             <div className="record-1-info">
               <h1>Suites</h1>
@@ -266,22 +272,41 @@ const Gallery = () => {
           </div>
           <div className="record-4">
             <div className="record-1-num">
-              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+              <h1>
+                <CountUp className="num" start={0} end={count} duration={4} />
+              </h1>
             </div>
             <div className="record-1-info">
               <h1>Suites</h1>
               <p>Dolor Sit Amet</p>
             </div>
           </div>
-          
         </div>
         <div className="blend-color-video"></div>
         <div className="gallery-video">
-       <video loop autoPlay muted>
+          <video loop autoPlay muted>
             <source src={gallery_video_01} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+        </div>
+      </div>
+      <div className="gallery-container-04">
+        <div className="gallery-container-04-a">
+          <h2>FREE WIFI</h2>
+          <h1>RELAX AREA</h1>
+          <button>VIEW ALL</button>
+          <div className="gallery-container-04-img">
+            <img src={gallery_14} alt="gallery_14" />
           </div>
+        </div>
+        <div className="gallery-container-04-b">
+          <h2>FREE WIFI</h2>
+          <h1>RELAX AREA</h1>
+          <button>VIEW ALL</button>
+          <div className="gallery-container-04-img">
+            <img src={gallery_14} alt="gallery_14" />
+          </div>
+        </div>
       </div>
     </div>
   );

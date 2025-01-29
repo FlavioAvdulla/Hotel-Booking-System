@@ -1,5 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import "./Gallery.css";
 
 // Photos
@@ -14,6 +16,11 @@ import gallery_08 from "../../../assets/images/Gallery/gallery_08.jpg";
 import gallery_09 from "../../../assets/images/Gallery/gallery_09.jpg";
 import gallery_10 from "../../../assets/images/Gallery/gallery_10.jpg";
 import gallery_11 from "../../../assets/images/Gallery/gallery_11.jpg";
+import gallery_12 from "../../../assets/images/Gallery/gallery_12.jpg";
+import gallery_13 from "../../../assets/images/Gallery/gallery_13.jpg";
+
+// Video
+import gallery_video_01 from "../../../assets/images/Gallery/gallery_video_01.mp4";
 
 // Icons
 import { SlArrowRight } from "react-icons/sl";
@@ -65,6 +72,19 @@ const Modal = ({ isOpen, currentIndex, onNext, onPrev, onClose }) => {
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const[count, setCount] = useState(0);
+
+   const { ref, inView } = useInView({
+    triggerOnce: true, // only trigger once
+    threshold: 0.1, // percentage of the element's visibility
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setCount(30);
+    }
+  }, [inView]);
+
 
   const handleImageClick = (index) => {
     setCurrentIndex(index);
@@ -174,7 +194,10 @@ const Gallery = () => {
             <img src={gallery_11} alt="gallery_11" />
           </div>
           <div className="gallery-right">
-            <div className="gallery-right-01">argarg</div>
+            <div className="gallery-right-01">
+              <div className="blend-color"></div>
+              <img src={gallery_12} alt="gallery_12" />
+            </div>
             <div className="gallery-right-02">
               <div className="gallery-right-02-a">
                 <h1>Hotel Info</h1>
@@ -205,10 +228,60 @@ const Gallery = () => {
                   </div>
                 </div>
               </div>
-              <div className="gallery-right-02-b">arewga</div>
+              <div className="gallery-right-02-b">
+                <img src={gallery_13} alt="gallery_13" />
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="gallery-container-03" ref={ref}>
+        <div className="gallery-section-03">
+          <div className="record-1">
+            <div className="record-1-num">
+              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+            </div>
+            <div className="record-1-info">
+              <h1>Suites</h1>
+              <p>Dolor Sit Amet</p>
+            </div>
+          </div>
+          <div className="record-2">
+            <div className="record-1-num">
+              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+            </div>
+            <div className="record-1-info">
+              <h1>Suites</h1>
+              <p>Dolor Sit Amet</p>
+            </div>
+          </div>
+          <div className="record-3">
+            <div className="record-1-num">
+              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+            </div>
+            <div className="record-1-info">
+              <h1>Suites</h1>
+              <p>Dolor Sit Amet</p>
+            </div>
+          </div>
+          <div className="record-4">
+            <div className="record-1-num">
+              <h1><CountUp className="num" start={0} end={count} duration={4}/></h1>
+            </div>
+            <div className="record-1-info">
+              <h1>Suites</h1>
+              <p>Dolor Sit Amet</p>
+            </div>
+          </div>
+          
+        </div>
+        <div className="blend-color-video"></div>
+        <div className="gallery-video">
+       <video loop autoPlay muted>
+            <source src={gallery_video_01} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          </div>
       </div>
     </div>
   );

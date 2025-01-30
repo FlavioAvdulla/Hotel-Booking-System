@@ -8,10 +8,13 @@ import contacts_01 from "../../../assets/images/Contacts/contacts_01.jpg";
 import contacts_02 from "../../../assets/images/Contacts/contacts_02.jpg";
 
 // Icons
-
 import { IoLocationOutline } from "react-icons/io5";
 import { MdAddIcCall } from "react-icons/md";
 import { IoMailOutline } from "react-icons/io5";
+
+
+// Scroll to top
+import ScrollToTop from "../../ScrollToTop/ScrollToTop.jsx";
 
 const Contacts = () => {
   // State to manage form submission result
@@ -45,6 +48,7 @@ const Contacts = () => {
 
   return (
     <div className="contacts">
+      <ScrollToTop/>
       <div className="section-01">
         <div className="banner-info">
           <h1>CONTACT US</h1>

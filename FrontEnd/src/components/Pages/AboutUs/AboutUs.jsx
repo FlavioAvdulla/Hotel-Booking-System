@@ -12,6 +12,9 @@ import "swiper/swiper-bundle.css";
 
 import { Navigation, Pagination } from "swiper/modules";
 
+// Scroll to top
+import ScrollToTop from "../../ScrollToTop/ScrollToTop.jsx";
+
 // import  texts  from "../../pages/AboutUs/texts.json"
 
 // Images
@@ -30,6 +33,7 @@ const AboutUs = () => {
 
   return (
     <div className="about-us">
+      <ScrollToTop/>
       <div className="section-01">
         <div className="banner-info">
           <h1>ABOUT US</h1>

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"; // Import React library
 import "./Rooms.css"; // Import CSS file for styling
 import room_01 from "../../../assets/images/Rooms/room_01.jpg"; // Import room images
@@ -8,10 +9,14 @@ import room_05 from "../../../assets/images/Rooms/room_05.jpg";
 import room_06 from "../../../assets/images/Rooms/room_06.jpg";
 import room_07 from "../../../assets/images/Rooms/room_07.jpg";
 
+// Scroll to top
+import ScrollToTop from "../../ScrollToTop/ScrollToTop.jsx";
+
 // Rooms component definition
 const Rooms = () => {
   return (
     <div className="rooms">
+      <ScrollToTop/>
       <div className="rooms-container">
         <div className="photo-section">
           <div className="photo-section-01">

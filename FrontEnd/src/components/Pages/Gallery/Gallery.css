@@ -110,7 +110,7 @@
     width: 85%;
     height: 600px;
     margin: 0px auto 100px auto;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .gallery-section-02 {
@@ -239,7 +239,6 @@
 .gallery-container-03 {
     display: flex;
     width: 100%;
- 
     height: 300px;
     margin: 0px auto 100px auto;
     overflow: hidden;
@@ -335,7 +334,7 @@
     display: flex;
     width: 100%;
     height: 400px;
-    margin: 0px auto 100px auto;
+    margin: 0px auto 0px auto;
     /* background-color: antiquewhite; */
     /* gap: 20px; */
 }
@@ -346,21 +345,25 @@
     flex-direction: column;
     position: relative;
     width: 50%;
-    gap: 20px;
+    gap: 18px;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
-    /* background-color: azure; */
+    overflow: hidden;
 }
 
 .gallery-container-04-a h2,
 .gallery-container-04-b h2 {
     font-family: 'CamptonLight', sans-serif;
+    color: white;
+    z-index: 5;
 }
 .gallery-container-04-a h1,
 .gallery-container-04-b h1 {
     font-family: 'CamptonSemiBold', sans-serif;
     font-size: 40px;
+    color: white;
+    margin: 0px 0px 6px 0px;
+    z-index: 5;
 }
 
 .gallery-container-04-img {
@@ -377,6 +380,7 @@
     width: 100%;
     z-index: -10;
 }
+
 
 .gallery-container-04-a button,
 .gallery-container-04-b button {

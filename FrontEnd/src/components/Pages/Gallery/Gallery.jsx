@@ -19,6 +19,10 @@ import gallery_11 from "../../../assets/images/Gallery/gallery_11.jpg";
 import gallery_12 from "../../../assets/images/Gallery/gallery_12.jpg";
 import gallery_13 from "../../../assets/images/Gallery/gallery_13.jpg";
 import gallery_14 from "../../../assets/images/Gallery/gallery_14.jpg";
+import gallery_15 from "../../../assets/images/Gallery/gallery_15.jpg";
+
+// Scroll to top
+import ScrollToTop from "../../ScrollToTop/ScrollToTop.jsx";
 
 // Video
 import gallery_video_01 from "../../../assets/images/Gallery/gallery_video_01.mp4";
@@ -107,15 +111,9 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
+      <ScrollToTop/>
       <div className="gallery-container-01">
-        <div className="gallery-title">
-          <h1>Masonry Layout</h1>
-          <p>
-            With a variety of layout options, including grid, masonry, and
-            carousel, you can choose the perfect display style to match your
-            website’s aesthetic.
-          </p>
-        </div>
+       
 
         <div className="gallery-photos">
           <div className="gallery-section-01">
@@ -180,6 +178,15 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+
+      <div className="gallery-title">
+          <h1>Masonry Layout</h1>
+          <p>
+            With a variety of layout options, including grid, masonry, and
+            carousel, you can choose the perfect display style to match your
+            website’s aesthetic.
+          </p>
+        </div>
 
       <Modal
         isOpen={isModalOpen}
@@ -304,7 +311,7 @@ const Gallery = () => {
           <h1>RELAX AREA</h1>
           <button>VIEW ALL</button>
           <div className="gallery-container-04-img">
-            <img src={gallery_14} alt="gallery_14" />
+            <img src={gallery_15} alt="gallery_15" />
           </div>
         </div>
       </div>

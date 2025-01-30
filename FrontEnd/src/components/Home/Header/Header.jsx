@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import "./Header.css";
 import Header_02 from "../../../assets/images/header_02.jpg";
 
+// Scroll to top
+import ScrollToTop from "../../ScrollToTop/ScrollToTop.jsx";
+
 // Array of month abbreviations
 const months = [
   "JAN",
@@ -105,6 +108,7 @@ const Header = () => {
 
   return (
     <div className="header">
+      <ScrollToTop/>
       <img src={Header_02} alt={Header_02} />
       <div className="first-container">
         <div className="blend-overlay"></div>

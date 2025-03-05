@@ -32,8 +32,7 @@ const NavbarBottom = () => {
       setActiveSection("News");
     } else if (path.includes("/contacts")) {
       setActiveSection("Contacts");
-    }
-      else if (path.includes("/gallery")) {
+    } else if (path.includes("/gallery")) {
       setActiveSection("Gallery");
     }
   }, [location]);
